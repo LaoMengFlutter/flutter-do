@@ -53,3 +53,5 @@ App升级功能：[https://github.com/781238222/flutter_app_upgrade](https://git
   - 支持Android下载Apk包进行升级
   - IOS未上架到app store，暂时不能升级。
 
+
+[Android apk下载](http://img.laomengit.com/app-release-v1.0.0.apk)
