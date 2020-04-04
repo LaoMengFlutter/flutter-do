@@ -8,29 +8,29 @@ Flutter Fly是什么？Flutter Fly是一款开源的Flutter 项目，App内集�
 
 欢迎页：
 
-<img src="http://img.laomengit.com/fly_1.gif" style="zoom:33%;" />
+![](/screen/fly_1.gif)
 
 首页、控件页面、详情页及搜索页面：
 
 |                             首页                             | 详情页                                                       | 控件页                                                       | 搜索搜索                                                     |
 | :----------------------------------------------------------: | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <img src="http://img.laomengit.com/fly_2.gif" style="zoom:33%;"/> | <img src="http://img.laomengit.com/fly_3.gif" style="zoom:33%;"/> | <img src="http://img.laomengit.com/fly_4.gif" style="zoom:33%;"/> | <img src="http://img.laomengit.com/fly_5.gif" style="zoom:33%;"/> |
+| ![](https://github.com/781238222/flutter-do/tree/master/flutter_fly/screen/fly_2.gif) | ![](https://github.com/781238222/flutter-do/tree/master/flutter_fly/screen/fly_3.gif) | ![](https://github.com/781238222/flutter-do/tree/master/flutter_fly/screen/fly_4.gif) | ![](https://github.com/781238222/flutter-do/tree/master/flutter_fly/screen/fly_5.gif) |
 
 我：
 
 |                                                              |                                                              |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <img src="http://img.laomengit.com/fly_my_1.png" style="zoom:33%;" /> | <img src="http://img.laomengit.com/fly_my_2.png" style="zoom:33%;" /> |
+| ![](https://github.com/781238222/flutter-do/tree/master/flutter_fly/screen/fly_my_1.png) | ![](https://github.com/781238222/flutter-do/tree/master/flutter_fly/screen/fly_my_2.png) |
 
 |                                                              |                                                              |                                                              |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <img src="http://img.laomengit.com/fly_my_3.png" style="zoom:33%;" /> | <img src="http://img.laomengit.com/fly_my_4.png" style="zoom:33%;" /> | <img src="http://img.laomengit.com/fly_my_5.png" style="zoom:33%;" /> |
+| ![](https://github.com/781238222/flutter-do/tree/master/flutter_fly/screen/fly_my_3.png) | ![](https://github.com/781238222/flutter-do/tree/master/flutter_fly/screen/fly_my_4.png) | ![](https://github.com/781238222/flutter-do/tree/master/flutter_fly/screen/fly_my_5.png) |
 
 App升级功能：[https://github.com/781238222/flutter_app_upgrade](https://github.com/781238222/flutter_app_upgrade)
 
 |                                                              |                                                              |                                                              |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <img src="http://img.laomengit.com/app_upgrade_3.png" style="zoom:33%;" /> | <img src="http://img.laomengit.com/app_upgrade_4.gif" style="zoom:33%;" /> | <img src="http://img.laomengit.com/app_upgrade_5.png" style="zoom:50%;" /> |
+| ![](https://github.com/781238222/flutter-do/tree/master/flutter_fly/screen/app_upgrade_3.png) | ![](https://github.com/781238222/flutter-do/tree/master/flutter_fly/screen/app_upgrade_4.gif) | ![](https://github.com/781238222/flutter-do/tree/master/flutter_fly/screen/app_upgrade_5.png) |
 
 
 
@@ -49,7 +49,9 @@ App升级功能：[https://github.com/781238222/flutter_app_upgrade](https://git
   - 收藏的问题
   - 浏览过的文章
   - 关于页面
-- App升级：升级功能介绍查看：[https://github.com/781238222/flutter_app_upgrade](https://github.com/781238222/flutter_app_upgrade)
+- App升级：升级功能介绍查看：[https://github.com/781238222/flutter-do/tree/master/flutter_upgrade](https://github.com/781238222/flutter-do/tree/master/flutter_upgrade)
   - 支持Android下载Apk包进行升级
   - IOS未上架到app store，暂时不能升级。
 
+
+[Android apk下载](http://img.laomengit.com/app-release-v1.0.0.apk)
