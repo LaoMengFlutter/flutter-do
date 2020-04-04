@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:flutter/services.dart';
@@ -85,7 +85,7 @@ class _HomeState extends State<Home> {
         '5、新增加了分类查看功能'
       ],
 //      apkDownloadUrl:
-//          'https://storage.jd.com/arvrdata/0b7a580a-503b-49b1-8b86-80f0e5467e2f?Expires=1899191583&AccessKey=8Xc003t1kQzVk1eK&Signature=0g%2BxFBfGLejmPjOjogBzTrrORTE%3D',
+//          '',
       force: false,
     ));
   }
