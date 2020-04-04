@@ -8,7 +8,7 @@ Flutter Fly是什么？Flutter Fly是一款开源的Flutter 项目，App内集�
 
 欢迎页：
 
-![](https://github.com/781238222/flutter-do/blob/master/flutter_fly/screen/fly_1.gif)
+![](/screen/fly_1.gif)
 
 首页、控件页面、详情页及搜索页面：
 
@@ -49,7 +49,7 @@ App升级功能：[https://github.com/781238222/flutter_app_upgrade](https://git
   - 收藏的问题
   - 浏览过的文章
   - 关于页面
-- App升级：升级功能介绍查看：[https://github.com/781238222/flutter_app_upgrade](https://github.com/781238222/flutter_app_upgrade)
+- App升级：升级功能介绍查看：[https://github.com/781238222/flutter-do/tree/master/flutter_upgrade](https://github.com/781238222/flutter-do/tree/master/flutter_upgrade)
   - 支持Android下载Apk包进行升级
   - IOS未上架到app store，暂时不能升级。
 
