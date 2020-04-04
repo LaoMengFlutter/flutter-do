@@ -1,0 +1,6 @@
+framework module flutter_upgrade {
+  umbrella header "flutter_upgrade-umbrella.h"
+
+  export *
+  module * { export * }
+}
