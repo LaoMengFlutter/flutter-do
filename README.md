@@ -3,11 +3,14 @@
 ## 交流
 欢迎加入微信交流群，微信:**laomengit**,或扫二维码：
 
-![](http://img.laomengit.com/laomeng_qr.png)
+<center class="half">
+    <img src="http://img.laomengit.com/laomeng_qr.png" width="250"/>
+</center>
 
 欢迎关注公众号【老孟程序员】，一个非常高产Flutter相关文章的公众号，扫二维码关注：
-
-![](http://img.laomengit.com/laomeng_gh_qr.jpg)
+<center class="half">
+    <img src="http://img.laomengit.com/laomeng_gh_qr.jpg" width="250"/>
+</center>
 
 ## Flutter 控件
 
