@@ -3,7 +3,7 @@
 ## 交流
 欢迎加入微信交流群，微信:**laomengit**,或扫二维码：
 
-<img src="http://img.laomengit.com/laomeng_qr.jpeg" style="zoom:50%;" />
+![](http://img.laomengit.com/laomeng_qr.png)
 
 欢迎关注公众号【老孟程序员】，一个非常高产Flutter相关文章的公众号，扫二维码关注：
 
