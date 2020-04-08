@@ -1,4 +1,34 @@
-> 动起来，动手实践远比畏畏缩缩、止步不前要好得多。
+﻿> 动起来，动手实践远比畏畏缩缩、止步不前要好得多。
+
+## 项目介绍
+###  Flutter Fly（展翅高飞）：[https://github.com/781238222/flutter-do/tree/master/flutter_fly](https://github.com/781238222/flutter-do/tree/master/flutter_fly)
+
+<center class="half">
+    <img src="https://github.com/781238222/imgs/tree/master/flutter_fly/fly_2.gif" width="250"/>
+	<img src="https://github.com/781238222/imgs/tree/master/flutter_fly/fly_3.gif" width="250"/>
+	<img src="https://github.com/781238222/imgs/tree/master/flutter_fly/fly_4.gif" width="250"/>
+	<img src="https://github.com/781238222/imgs/tree/master/flutter_fly/fly_5.gif" width="250"/>
+</center>
+
+### Flutter App升级:[https://github.com/781238222/flutter-do/tree/master/flutter_upgrade](https://github.com/781238222/flutter-do/tree/master/flutter_upgrade)
+<center class="half">
+    <img src="https://github.com/781238222/imgs/tree/master/flutter_upgrade/app_upgrade_3.png" width="250"/>
+<img src="https://github.com/781238222/imgs/tree/master/flutter_upgrade/app_upgrade_4.gif" width="250"/>
+<img src="https://github.com/781238222/imgs/tree/master/flutter_upgrade/app_upgrade_5.png" width="250"/>
+<img src="https://github.com/781238222/imgs/tree/master/flutter_upgrade/app_upgrade_6.png" width="250"/>
+<img src="https://github.com/781238222/imgs/tree/master/flutter_upgrade/app_upgrade_7.png" width="250"/>
+
+</center>
+
+### 验证码输入框：[https://github.com/781238222/flutter-do/tree/master/flutter_verification_box](https://github.com/781238222/flutter-do/tree/master/flutter_verification_box)
+<center class="half">
+    <img src="https://github.com/781238222/imgs/tree/master/verification_box/verification_box_6.gif" width="250"/>
+   <img src="https://github.com/781238222/imgs/tree/master/verification_box/verification_box_7.gif" width="250"/>
+   <img src="https://github.com/781238222/imgs/tree/master/verification_box/verification_box_8.gif" width="250"/>
+
+</center>
+
+
 
 ## 交流
 欢迎加入微信交流群，微信:**laomengit**,或扫二维码：
