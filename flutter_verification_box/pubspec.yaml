@@ -1,8 +1,7 @@
 name: flutter_verification_box
-description: A new Flutter package.
-version: 0.0.1
-author:
-homepage:
+description: verification box
+version: 1.0.0
+homepage: https://github.com/781238222/flutter-do/tree/master/flutter_verification_box
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
