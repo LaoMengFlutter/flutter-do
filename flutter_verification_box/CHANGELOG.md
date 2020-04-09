@@ -1,3 +1,3 @@
-## [1.0.0] - TODO: Add release date.
+## [1.0.3] - TODO: 增加type类型export.
 
-* TODO: Describe initial release.
+* TODO: 增加type类型export.

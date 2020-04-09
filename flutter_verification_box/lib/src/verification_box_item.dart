@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_verification_box/verification_box_cursor.dart';
+import 'package:flutter_verification_box/src/verification_box_cursor.dart';
 
 ///
 /// 输入框样式
