@@ -5,41 +5,30 @@
 
 地址：[https://github.com/781238222/flutter-do/tree/master/flutter_fly](https://github.com/781238222/flutter-do/tree/master/flutter_fly)
 
-<center class="four">
-    <img src="https://github.com/781238222/imgs/raw/master/flutter_fly/fly_2.gif" width="250"/><img src="https://github.com/781238222/imgs/raw/master/flutter_fly/fly_3.gif" width="250"/><img src="https://github.com/781238222/imgs/raw/master/flutter_fly/fly_4.gif" width="250"/><img src="https://github.com/781238222/imgs/raw/master/flutter_fly/fly_5.gif" width="250"/> 
-</center>
+<img src="https://github.com/781238222/imgs/raw/master/flutter_fly/fly_2.gif" height="300em"/><img src="https://github.com/781238222/imgs/raw/master/flutter_fly/fly_3.gif" height="300em"/><img src="https://github.com/781238222/imgs/raw/master/flutter_fly/fly_4.gif" height="300em"/><img src="https://github.com/781238222/imgs/raw/master/flutter_fly/fly_5.gif" height="300em"/> 
 
-### Flutter App升级:[https://github.com/781238222/flutter-do/tree/master/flutter_upgrade](https://github.com/781238222/flutter-do/tree/master/flutter_upgrade)
-<center class="half">
-    <img src="https://github.com/781238222/imgs/raw/master/flutter_upgrade/app_upgrade_3.png" width="250"/>
-<img src="https://github.com/781238222/imgs/raw/master/flutter_upgrade/app_upgrade_4.gif" width="250"/>
-<img src="https://github.com/781238222/imgs/raw/master/flutter_upgrade/app_upgrade_5.png" width="250"/>
-<img src="https://github.com/781238222/imgs/raw/master/flutter_upgrade/app_upgrade_6.png" width="250"/>
-<img src="https://github.com/781238222/imgs/raw/master/flutter_upgrade/app_upgrade_7.png" width="250"/>
 
-</center>
+### Flutter App升级
+地址：[https://github.com/781238222/flutter-do/tree/master/flutter_upgrade](https://github.com/781238222/flutter-do/tree/master/flutter_upgrade)
 
-### 验证码输入框：[https://github.com/781238222/flutter-do/tree/master/flutter_verification_box](https://github.com/781238222/flutter-do/tree/master/flutter_verification_box)
-<center class="half">
-    <img src="https://github.com/781238222/imgs/raw/master/verification_box/verification_box_6.gif" width="250"/>
-   <img src="https://github.com/781238222/imgs/raw/master/verification_box/verification_box_7.gif" width="250"/>
-   <img src="https://github.com/781238222/imgs/raw/master/verification_box/verification_box_8.gif" width="250"/>
+<img src="https://github.com/781238222/imgs/raw/master/flutter_upgrade/app_upgrade_3.png" height="300em"/><img src="https://github.com/781238222/imgs/raw/master/flutter_upgrade/app_upgrade_4.gif" height="300em"/><img src="https://github.com/781238222/imgs/raw/master/flutter_upgrade/app_upgrade_5.png" height="300em"/><img src="https://github.com/781238222/imgs/raw/master/flutter_upgrade/app_upgrade_6.png" height="300em"/><img src="https://github.com/781238222/imgs/raw/master/flutter_upgrade/app_upgrade_7.png" height="300em"/>
 
-</center>
+
+### 验证码输入框
+地址：[https://github.com/781238222/flutter-do/tree/master/flutter_verification_box](https://github.com/781238222/flutter-do/tree/master/flutter_verification_box)
+
+<img src="https://github.com/781238222/imgs/raw/master/verification_box/verification_box_6.gif" height="300em"/><img src="https://github.com/781238222/imgs/raw/master/verification_box/verification_box_7.gif" height="300em"/><img src="https://github.com/781238222/imgs/raw/master/verification_box/verification_box_8.gif" height="300em"/>
+
 
 
 
 ## 交流
 欢迎加入微信交流群，微信:**laomengit**,或扫二维码：
 
-<center class="half">
-    <img src="http://img.laomengit.com/laomeng_qr.png" width="250"/>
-</center>
+ <img src="http://img.laomengit.com/laomeng_qr.png" width="250em"/>
 
 欢迎关注公众号【老孟程序员】，一个非常高产Flutter相关文章的公众号，扫二维码关注：
-<center class="half">
-    <img src="http://img.laomengit.com/laomeng_gh_qr.jpg" width="250"/>
-</center>
+ <img src="http://img.laomengit.com/laomeng_gh_qr.jpg" width="250em"/>
 
 ## Flutter 控件
 
