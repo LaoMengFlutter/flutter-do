@@ -1,14 +1,15 @@
 ﻿> 动起来，动手实践远比畏畏缩缩、止步不前要好得多。
 
 ## 项目介绍
-###  Flutter Fly（展翅高飞）：[https://github.com/781238222/flutter-do/tree/master/flutter_fly](https://github.com/781238222/flutter-do/tree/master/flutter_fly)
+###  Flutter Fly（展翅高飞）
 
-<center class="half">
-    <img src="https://github.com/781238222/imgs/tree/master/flutter_fly/fly_2.gif" width="250"/>
-	<img src="https://github.com/781238222/imgs/tree/master/flutter_fly/fly_3.gif" width="250"/>
-	<img src="https://github.com/781238222/imgs/tree/master/flutter_fly/fly_4.gif" width="250"/>
-	<img src="https://github.com/781238222/imgs/tree/master/flutter_fly/fly_5.gif" width="250"/>
-</center>
+地址：[https://github.com/781238222/flutter-do/tree/master/flutter_fly](https://github.com/781238222/flutter-do/tree/master/flutter_fly)
+
+![](https://github.com/781238222/imgs/tree/master/flutter_fly/fly_2.gif)
+![](https://github.com/781238222/imgs/tree/master/flutter_fly/fly_3.gif)
+![](https://github.com/781238222/imgs/tree/master/flutter_fly/fly_4.gif)
+![](https://github.com/781238222/imgs/tree/master/flutter_fly/fly_5.gif)
+
 
 ### Flutter App升级:[https://github.com/781238222/flutter-do/tree/master/flutter_upgrade](https://github.com/781238222/flutter-do/tree/master/flutter_upgrade)
 <center class="half">
