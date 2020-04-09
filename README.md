@@ -28,6 +28,7 @@
  <img src="http://img.laomengit.com/laomeng_qr.png" width="250em"/>
 
 欢迎关注公众号【老孟程序员】，一个非常高产Flutter相关文章的公众号，扫二维码关注：
+
  <img src="http://img.laomengit.com/laomeng_gh_qr.jpg" width="250em"/>
 
 ## Flutter 控件
