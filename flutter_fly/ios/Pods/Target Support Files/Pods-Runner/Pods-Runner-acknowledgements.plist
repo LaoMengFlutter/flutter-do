@@ -54,7 +54,7 @@ THE SOFTWARE.</string>
 			<string>TODO: Add your license here.
 </string>
 			<key>Title</key>
-			<string>flutter_upgrade</string>
+			<string>flutter_app_upgrade</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>

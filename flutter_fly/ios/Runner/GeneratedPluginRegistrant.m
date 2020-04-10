@@ -4,10 +4,10 @@
 
 #import "GeneratedPluginRegistrant.h"
 
-#if __has_include(<flutter_upgrade/FlutterUpgradePlugin.h>)
-#import <flutter_upgrade/FlutterUpgradePlugin.h>
+#if __has_include(<flutter_app_upgrade/FlutterAppUpgradePlugin.h>)
+#import <flutter_app_upgrade/FlutterAppUpgradePlugin.h>
 #else
-@import flutter_upgrade;
+@import flutter_app_upgrade;
 #endif
 
 #if __has_include(<sqflite/SqflitePlugin.h>)
@@ -25,7 +25,7 @@
 @implementation GeneratedPluginRegistrant
 
 + (void)registerWithRegistry:(NSObject<FlutterPluginRegistry>*)registry {
-  [FlutterUpgradePlugin registerWithRegistrar:[registry registrarForPlugin:@"FlutterUpgradePlugin"]];
+  [FlutterAppUpgradePlugin registerWithRegistrar:[registry registrarForPlugin:@"FlutterAppUpgradePlugin"]];
   [SqflitePlugin registerWithRegistrar:[registry registrarForPlugin:@"SqflitePlugin"]];
   [FLTWebViewFlutterPlugin registerWithRegistrar:[registry registrarForPlugin:@"FLTWebViewFlutterPlugin"]];
 }

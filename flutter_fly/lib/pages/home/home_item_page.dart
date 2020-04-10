@@ -236,7 +236,13 @@ class _HomeItemPageState extends State<HomeItemPage>
       body: TabBarView(
         controller: this._tabController,
         children: <Widget>[
-          _buildTabNewsList(_newsKey, _newsList),
+          RefreshIndicator(
+            onRefresh: (){
+              print(('onRefresh'));
+            },
+            child: _buildTabNewsList(_newsKey, _newsList),
+          ),
+
           _buildTabNewsList(_technologyKey, _technologyList),
         ],
       ),

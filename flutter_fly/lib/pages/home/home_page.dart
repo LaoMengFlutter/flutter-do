@@ -6,8 +6,8 @@ import 'package:flutter_fly/pages/my/my_page.dart';
 import 'package:flutter_fly/pages/search/search_page.dart';
 import 'package:flutter_fly/pages/widgets_item/widget_page.dart';
 import 'package:flutter_fly/widgets/fluid_nav_bar/fluid_nav_bar.dart';
-import 'package:flutter_upgrade/upgrade.dart';
 import 'home_item_page.dart';
+import 'package:flutter_app_upgrade/flutter_app_upgrade.dart';
 
 ///
 /// des: 首页底部导航及页面切换

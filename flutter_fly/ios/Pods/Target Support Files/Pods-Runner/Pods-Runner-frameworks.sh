@@ -163,21 +163,21 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework"
   install_framework "${PODS_ROOT}/../Flutter/Flutter.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/flutter_upgrade/flutter_upgrade.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/flutter_app_upgrade/flutter_app_upgrade.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/sqflite/sqflite.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/webview_flutter/webview_flutter.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework"
   install_framework "${PODS_ROOT}/../Flutter/Flutter.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/flutter_upgrade/flutter_upgrade.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/flutter_app_upgrade/flutter_app_upgrade.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/sqflite/sqflite.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/webview_flutter/webview_flutter.framework"
 fi
 if [[ "$CONFIGURATION" == "Profile" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework"
   install_framework "${PODS_ROOT}/../Flutter/Flutter.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/flutter_upgrade/flutter_upgrade.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/flutter_app_upgrade/flutter_app_upgrade.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/sqflite/sqflite.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/webview_flutter/webview_flutter.framework"
 fi

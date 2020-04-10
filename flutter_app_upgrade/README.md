@@ -1,6 +1,23 @@
-# flutter_app_upgrade
+# 添加依赖
 
-如果你需要支持Android平台，在`./android/app/src/main/AndroidManifest.xml`文件中配置`provider`，代码如下：
+1、在`pubspec.yaml`中加入：
+
+```
+dependencies:
+  flutter_app_upgrade: ^1.0.0
+```
+2、执行flutter命令获取包：
+
+`flutter pub get`
+
+3、引入
+
+```
+import 'package:flutter_app_upgrade/flutter_app_upgrade.dart';
+
+```
+
+4、如果你需要支持Android平台，在`./android/app/src/main/AndroidManifest.xml`文件中配置`provider`，代码如下：
 
 ```
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"

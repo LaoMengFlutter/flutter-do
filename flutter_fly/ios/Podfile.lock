@@ -1,6 +1,6 @@
 PODS:
   - Flutter (1.0.0)
-  - flutter_upgrade (0.0.1):
+  - flutter_app_upgrade (0.0.1):
     - Flutter
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
@@ -13,7 +13,7 @@ PODS:
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
-  - flutter_upgrade (from `.symlinks/plugins/flutter_upgrade/ios`)
+  - flutter_app_upgrade (from `.symlinks/plugins/flutter_app_upgrade/ios`)
   - sqflite (from `.symlinks/plugins/sqflite/ios`)
   - webview_flutter (from `.symlinks/plugins/webview_flutter/ios`)
 
@@ -24,8 +24,8 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   Flutter:
     :path: Flutter
-  flutter_upgrade:
-    :path: ".symlinks/plugins/flutter_upgrade/ios"
+  flutter_app_upgrade:
+    :path: ".symlinks/plugins/flutter_app_upgrade/ios"
   sqflite:
     :path: ".symlinks/plugins/sqflite/ios"
   webview_flutter:
@@ -33,7 +33,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
-  flutter_upgrade: 1a911d7aff45a31785ce75dbdfa4a68d02b37aa0
+  flutter_app_upgrade: a62fbe2a09a2176a7b44211c8355adfcfb969779
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   sqflite: 4001a31ff81d210346b500c55b17f4d6c7589dd0
   webview_flutter: bec7599de6bfbe8008a739aa3ebd7b364ea9d0cd

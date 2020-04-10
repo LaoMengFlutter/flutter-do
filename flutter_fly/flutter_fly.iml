@@ -9,6 +9,12 @@
       <excludeFolder url="file://$MODULE_DIR$/.idea" />
       <excludeFolder url="file://$MODULE_DIR$/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_upgrade/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_upgrade/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_upgrade/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_upgrade/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_upgrade/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_upgrade/example/build" />
       <excludeFolder url="file://$MODULE_DIR$/flutter_upgrade/example/ios/.symlinks/plugins/flutter_upgrade/example/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/flutter_upgrade/example/ios/.symlinks/plugins/flutter_upgrade/example/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/flutter_upgrade/example/ios/.symlinks/plugins/flutter_upgrade/example/build" />
