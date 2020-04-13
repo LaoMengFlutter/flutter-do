@@ -19,6 +19,10 @@
 
 <img src="https://github.com/781238222/imgs/raw/master/verification_box/verification_box_6.gif" height="300em"/><img src="https://github.com/781238222/imgs/raw/master/verification_box/verification_box_7.gif" height="300em"/><img src="https://github.com/781238222/imgs/raw/master/verification_box/verification_box_8.gif" height="300em"/>
 
+### 弹幕
+地址：[https://github.com/781238222/flutter-do/tree/master/flutter_barrage_sample](https://github.com/781238222/flutter-do/tree/master/flutter_barrage_sample)
+
+<img src="https://github.com/781238222/imgs/raw/master/barrage/barrage_1.gif" height="300em"/><img src="https://github.com/781238222/imgs/raw/master/barrage/barrage_2.gif" height="300em"/><img src="https://github.com/781238222/imgs/raw/master/barrage/barrage_3.gif" height="300em"/><img src="https://github.com/781238222/imgs/raw/master/barrage/barrage_4.gif" height="300em"/><img src="https://github.com/781238222/imgs/raw/master/barrage/barrage_5.gif" height="300em"/>
 
 
 
