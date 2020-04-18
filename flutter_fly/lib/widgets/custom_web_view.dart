@@ -14,6 +14,7 @@ import 'package:webview_flutter/webview_flutter.dart';
 ///
 toWebView(BuildContext context, String title, String url,
     {String desc = '', String tags = ''}) async {
+  print('url:$url');
   Navigator.of(context).push(MaterialPageRoute(builder: (context) {
     return CustomWebView(
       title,

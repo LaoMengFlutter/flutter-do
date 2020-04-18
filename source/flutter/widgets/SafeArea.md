@@ -1,0 +1,55 @@
+---
+title: 'SafeArea'
+description: '控件介绍'
+type: widgets
+
+---
+
+
+
+现如今的手机已经不能提供给应用程序规整的矩形界面了，一些带圆角或者是刘海屏让应用程序的布局更加复杂，甚至是需要单独适配，这对开发者来来太糟糕了。
+
+
+因此SafeArea控件应用而生，SafeArea通过`MediaQuery`检测屏幕的尺寸使应用程序的大小与屏幕适配。
+
+创建一个铺满全屏的ListView，并显示数据，代码如下：
+```
+ListView(
+      children: List.generate(100, (i) => Text('老孟，一个有态度的程序员')),
+    )
+```
+效果如图：
+
+![](https://img-blog.csdnimg.cn/2020022014320926.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L21lbmdrczE5ODc=,size_16,color_FFFFFF,t_70)
+
+底部的数据明显被遮挡了，想要解决这个问题只需将ListView包裹在SafeArea中即可，代码如下：
+```
+SafeArea(
+      child: ListView(
+        children: List.generate(100, (i) => Text('老孟，一个有态度的程序员')),
+      ),
+    )
+```
+效果如图：
+![](https://img-blog.csdnimg.cn/20200219174034838.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L21lbmdrczE5ODc=,size_16,color_FFFFFF,t_70)
+
+我们甚至可以指定显示区域，默认情况下上下左右都是指定区域，如下代码去掉左侧区域：
+```
+SafeArea(
+	left: false,
+    child: ListView(),
+)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -45,3 +45,9 @@ App升级功能：
   - 支持Android下载Apk包进行升级
   - IOS未上架到app store，暂时不能升级。
 
+## 版本更新
+
+1、更新控件及文章地址，如果安装了以前版本请删除后重新安装。
+
+体验包下载地址：[http://img.laomengit.com/app-release.apk](http://img.laomengit.com/app-release.apk)
+
