@@ -1,4 +1,64 @@
-﻿> 动起来，动手实践远比畏畏缩缩、止步不前要好得多。
+> 动起来，动手实践远比畏畏缩缩、止步不前要好得多。
+
+## 组件介绍(总计179个)
+
+Github开源地址：[https://github.com/781238222/flutter-do/tree/master/source/flutter/widgets](https://github.com/781238222/flutter-do/tree/master/source/flutter/widgets)
+
+如果觉得使用源文件不方便查看，可以到[老孟程序员](http://laomengit.com/)博客进行查看，除了查看更加方便外，还有如下好处：
+
+- 对所有组件按字母进行了排序，方便查找。
+- 列出了常用组件和非常用组件，初学者只需要重点学习常用组件即可。
+- 这里有对初学者的一点点个人建议，少走弯路。
+- 所有控件类的继承关系图，目前统计的控件总共353个。
+- 定期更新新的组件的用法，也可以加入微信交流群（博客有加群方式），会同步更新。
+
+### 常用组件(62)
+
+ 1| 2 |3 | 4| 5|
+-|-|-|-|-
+[AboutDialog](http:laomengit.com/flutter/widgets/AboutDialog.html) | [AlertDialog](http:laomengit.com/flutter/widgets/Dialog.html#AlertDialog) | [Align](http:laomengit.com/flutter/widgets/Align.html) | [AnimatedList](http:laomengit.com/flutter/widgets/AnimatedList.html) | [AnimatedSwitcher](http:laomengit.com/flutter/widgets/AnimatedSwitcher.html) |
+[AppBar](http:laomengit.com/flutter/widgets/AppBar.html) | [AspectRatio](http:laomengit.com/flutter/widgets/ConstrainedBox.html#AspectRatio) | [BottomNavigationBar](http:laomengit.com/flutter/widgets/BottomNavigationBar.html) | [BottomNavigationBarItem](http:laomengit.com/flutter/widgets/BottomNavigationBar.html#BottomNavigationBarItem) | [Card](http:laomengit.com/flutter/widgets/Card.html) |
+[Center](http:laomengit.com/flutter/widgets/Align.html#Center) | [Checkbox](http:laomengit.com/flutter/widgets/Checkbox.html) | [CircularProgressIndicator](http:laomengit.com/flutter/widgets/ProgressIndicator.html#CircularProgressIndicator) | [Column](http:laomengit.com/flutter/widgets/Column.html) | [Container](http:laomengit.com/flutter/widgets/Container.html) |
+[CupertinoActivityIndicator](http:laomengit.com/flutter/widgets/ProgressIndicator.html#CupertinoActivityIndicator) | [CupertinoAlertDialog](http:laomengit.com/flutter/widgets/Dialog.html#CupertinoAlertDialog) | [DataTable](http:laomengit.com/flutter/widgets/DataTable.html) | [Dialog](http:laomengit.com/flutter/widgets/Dialog.html) | [Divider](http:laomengit.com/flutter/widgets/Divider.html) |
+[Drawer](http:laomengit.com/flutter/widgets/Drawer.html) | [DropdownButton](http:laomengit.com/flutter/widgets/Button.html#DropdownButton) | [Expanded](http:laomengit.com/flutter/widgets/Flexible.html#Expanded) | [FlatButton](http:laomengit.com/flutter/widgets/Button.html#FlatButton) | [Flexible](http:laomengit.com/flutter/widgets/Flexible.html) |
+[FractionallySizedBox](http:laomengit.com/flutter/widgets/ConstrainedBox.html#FractionallySizedBox) | [GridView](http:laomengit.com/flutter/widgets/GridView.html) | [Hero](http:laomengit.com/flutter/widgets/Hero.html) | [Icon](http:laomengit.com/flutter/widgets/Icon.html) | [Image](http:laomengit.com/flutter/widgets/Image.html) |
+[IndexedStack](http:laomengit.com/flutter/widgets/Stack.html#IndexedStack) | [Ink](http:laomengit.com/flutter/widgets/InkWell.html#Ink) | [InkWell](http:laomengit.com/flutter/widgets/InkWell.html) | [LinearProgressIndicator](http:laomengit.com/flutter/widgets/ProgressIndicator.html#LinearProgressIndicator) | [ListView](http:laomengit.com/flutter/widgets/ListView.html) |
+[MaterialApp](http:laomengit.com/flutter/widgets/MaterialApp.html) | [MediaQuery](http:laomengit.com/flutter/widgets/MediaQuery.html) | [MediaQueryData](http:laomengit.com/flutter/widgets/MediaQuery.html#MediaQueryData) | [OutlineButton](http:laomengit.com/flutter/widgets/Button.html#OutlineButton) | [Padding](http:laomengit.com/flutter/widgets/Padding.html) |
+[PageView](http:laomengit.com/flutter/widgets/PageView.html) | [Radio](http:laomengit.com/flutter/widgets/Radio.html) | [RaisedButton](http:laomengit.com/flutter/widgets/Button.html#RaisedButton) | [RefreshIndicator](http:laomengit.com/flutter/widgets/RefreshIndicator.html) | [RefreshProgressIndicator](http:laomengit.com/flutter/widgets/ProgressIndicator.html#RefreshProgressIndicator) |
+[RichText](http:laomengit.com/flutter/widgets/RichText.html) | [Column](http:laomengit.com/flutter/widgets/Column.html) | [Scaffold](http:laomengit.com/flutter/widgets/Scaffold.html) | [SimpleDialog](http:laomengit.com/flutter/widgets/Dialog.html#SimpleDialog) | [SizedBox](http:laomengit.com/flutter/widgets/ConstrainedBox.html#SizedBox) |
+[Slider](http:laomengit.com/flutter/widgets/Slider.html) | [Stack](http:laomengit.com/flutter/widgets/Stack.html) | [Switch](http:laomengit.com/flutter/widgets/Switch.html) | [TabBar](http:laomengit.com/flutter/widgets/TabBar.html) | [TabBarView](http:laomengit.com/flutter/widgets/TabBar.html#TabBarView) |
+[Table](http:laomengit.com/flutter/widgets/Table.html) | [Text](http:laomengit.com/flutter/widgets/Text.html) | [TextField](http:laomengit.com/flutter/widgets/TextField.html) | [VerticalDivider](http:laomengit.com/flutter/widgets/Divider.html#VerticalDivider) | [showCupertinoModalPopup](http:laomengit.com/flutter/widgets/showDialog.html#showCupertinoModalPopup) |
+[showMenu](http:laomengit.com/flutter/widgets/showDialog.html#showMenu) | [showModalBottomSheet](http:laomengit.com/flutter/widgets/showDialog.html#showModalBottomSheet) |
+
+### 查询组件(117)
+
+ 1| 2 |3 | 4| 5|
+-|-|-|-|-
+[AbsorbPointer](http:laomengit.com/flutter/widgets/AbsorbPointer.html) | [AlignTransition](http:laomengit.com/flutter/widgets/AlignTransition.html) | [AnimatedAlign](http:laomengit.com/flutter/widgets/AnimatedAlign.html) | [AnimatedBuilder](http:laomengit.com/flutter/widgets/AnimatedBuilder.html) | [AnimatedContainer](http:laomengit.com/flutter/widgets/AnimatedContainer.html) |
+[AnimatedCrossFade](http:laomengit.com/flutter/widgets/AnimatedCrossFade.html) | [AnimatedDefaultTextStyle](http:laomengit.com/flutter/widgets/AnimatedDefaultTextStyle.html) | [AnimatedIcon](http:laomengit.com/flutter/widgets/AnimatedIcon.html) | [AnimatedModalBarrier](http:laomengit.com/flutter/widgets/AnimatedModalBarrier.html) | [AnimatedOpacity](http:laomengit.com/flutter/widgets/AnimatedOpacity.html) |
+[AnimatedPadding](http:laomengit.com/flutter/widgets/AnimatedPadding.html) | [AnimatedPositioned](http:laomengit.com/flutter/widgets/AnimatedPositioned.html) | [AnimatedPositionedDirectional](http:laomengit.com/flutter/widgets/AnimatedPositionedDirectional.html) | [AssetImage](http:laomengit.com/flutter/widgets/Icon.html#AssetImage) | [BackButton](http:laomengit.com/flutter/widgets/Button.html#BackButton) |
+[BackdropFilter](http:laomengit.com/flutter/widgets/BackdropFilter.html) | [Banner](http:laomengit.com/flutter/widgets/Banner.html) | [ButtonBar](http:laomengit.com/flutter/widgets/Button.html#ButtonBar) | [CheckboxListTile](http:laomengit.com/flutter/widgets/Checkbox.html#CheckboxListTile) | [CheckedModeBanner](http:laomengit.com/flutter/widgets/Banner.html#CheckedModeBanner) |
+[ClipOval](http:laomengit.com/flutter/widgets/Clip.html#ClipOval) | [ClipPath](http:laomengit.com/flutter/widgets/Clip.html#ClipPath) | [ClipRRect](http:laomengit.com/flutter/widgets/Clip.html#ClipRRect) | [ClipRect](http:laomengit.com/flutter/widgets/Clip.html#ClipRect) | [CloseButton](http:laomengit.com/flutter/widgets/Button.html#CloseButton) |
+[ColorFiltered](http:laomengit.com/flutter/widgets/ColorFiltered.html) | [ConstrainedBox](http:laomengit.com/flutter/widgets/ConstrainedBox.html) | [CupertinoActionSheet](http:laomengit.com/flutter/widgets/CupertinoActionSheet.html) | [CupertinoActionSheetAction](http:laomengit.com/flutter/widgets/CupertinoActionSheet.html#CupertinoActionSheetAction) | [CupertinoApp](http:laomengit.com/flutter/widgets/MaterialApp.html#CupertinoApp) |
+[CupertinoButton](http:laomengit.com/flutter/widgets/Button.html#CupertinoButton) | [CupertinoNavigationBar](http:laomengit.com/flutter/widgets/CupertinoNavigationBar.html) | [CupertinoPageScaffold](http:laomengit.com/flutter/widgets/CupertinoPageScaffold.html) | [CupertinoPicker](http:laomengit.com/flutter/widgets/CupertinoPicker.html) | [CupertinoSlider](http:laomengit.com/flutter/widgets/Slider.html#CupertinoSlider) |
+[CupertinoSliverRefreshControl](http:laomengit.com/flutter/widgets/RefreshIndicator.html#CupertinoSliverRefreshControl) | [CupertinoSwitch](http:laomengit.com/flutter/widgets/Switch.html#CupertinoSwitch) | [CupertinoTabBar](http:laomengit.com/flutter/widgets/CupertinoTabBar.html) | [CupertinoTabScaffold](http:laomengit.com/flutter/widgets/CupertinoTabScaffold.html) | [CupertinoTabView](http:laomengit.com/flutter/widgets/CupertinoTabBar.html#CupertinoTabView) |
+[CupertinoTextField](http:laomengit.com/flutter/widgets/TextField.html#CupertinoTextField) | [CustomClipper](http:laomengit.com/flutter/widgets/Clip.html#CustomClipper) | [DataCell](http:laomengit.com/flutter/widgets/DataTable.html#DataCell) | [DataColumn](http:laomengit.com/flutter/widgets/DataTable.html#DataColumn) | [DataColumn](http:laomengit.com/flutter/widgets/DataTable.html#DataColumn) |
+[DataRow](http:laomengit.com/flutter/widgets/DataTable.html#DataRow) | [DatePicker](http:laomengit.com/flutter/widgets/DatePicker.html) | [DecoratedBoxTransition](http:laomengit.com/flutter/widgets/DecoratedBoxTransition.html) | [DefaultTextStyleTransition](http:laomengit.com/flutter/widgets/DefaultTextStyleTransition.html) | [Dismissible](http:laomengit.com/flutter/widgets/Dismissible.html) |
+[DragTarget](http:laomengit.com/flutter/widgets/Draggable.html#DragTarget) | [Draggable](http:laomengit.com/flutter/widgets/Draggable.html) | [DraggableScrollableSheet](http:laomengit.com/flutter/widgets/DraggableScrollableSheet.html) | [ExpansionPanelList](http:laomengit.com/flutter/widgets/ExpansionPanelList.html) | [ExpansionTile](http:laomengit.com/flutter/widgets/ExpansionTile.html) |
+[FadeInImage](http:laomengit.com/flutter/widgets/FadeInImage.html) | [FadeTransition](http:laomengit.com/flutter/widgets/FadeTransition.html) | [FittedBox](http:laomengit.com/flutter/widgets/FittedBox.html) | [FloatingActionButton](http:laomengit.com/flutter/widgets/FloatingActionButton.html) | [Form](http:laomengit.com/flutter/widgets/Form.html) |
+[FormField](http:laomengit.com/flutter/widgets/Form.html#FormField) | [FutureBuilder](http:laomengit.com/flutter/widgets/FutureBuilder.html) | [GridPaper](http:laomengit.com/flutter/widgets/GridPaper.html) | [IconButton](http:laomengit.com/flutter/widgets/Button.html#IconButton) | [IgnorePointer](http:laomengit.com/flutter/widgets/AbsorbPointer.html#IgnorePointer) |
+[LayoutBuilder](http:laomengit.com/flutter/widgets/LayoutBuilder.html) | [LicensePage](http:laomengit.com/flutter/widgets/LicensePage.html) | [LimitedBox](http:laomengit.com/flutter/widgets/ConstrainedBox.html#LimitedBox) | [ListTile](http:laomengit.com/flutter/widgets/ListTile.html) | [ListWheelScrollView](http:laomengit.com/flutter/widgets/ListWheelScrollView.html) |
+[LongPressDraggable](http:laomengit.com/flutter/widgets/Draggable.html#LongPressDraggable) | [ModalBarrier](http:laomengit.com/flutter/widgets/ModalBarrier.html) | [Opacity](http:laomengit.com/flutter/widgets/Opacity.html) | [Overlay](http:laomengit.com/flutter/widgets/Overlay.html) | [Placeholder](http:laomengit.com/flutter/widgets/Placeholder.html) |
+[PopupMenuButton](http:laomengit.com/flutter/widgets/Button.html#PopupMenuButton) | [Positioned](http:laomengit.com/flutter/widgets/Positioned.html) | [PositionedDirectional](http:laomengit.com/flutter/widgets/PositionedDirectional.html) | [PositionedTransition](http:laomengit.com/flutter/widgets/PositionedTransition.html) | [RawMaterialButton](http:laomengit.com/flutter/widgets/Button.html#RawMaterialButton) |
+[RelativePositionedTransition](http:laomengit.com/flutter/widgets/RelativePositionedTransition.html) | [ReorderableListView](http:laomengit.com/flutter/widgets/ReorderableListView.html) | [RotationTransition](http:laomengit.com/flutter/widgets/RotationTransition.html) | [SafeArea](http:laomengit.com/flutter/widgets/SafeArea.html) | [ScaleTransition](http:laomengit.com/flutter/widgets/ScaleTransition.html) |
+[SelectableText](http:laomengit.com/flutter/widgets/SelectableText.html) | [ShaderMask](http:laomengit.com/flutter/widgets/ShaderMask.html) | [SizeTransition](http:laomengit.com/flutter/widgets/SizeTransition.html) | [SlideTransition](http:laomengit.com/flutter/widgets/SlideTransition.html) | [SliverAppBar](http:laomengit.com/flutter/widgets/SliverAppBar.html) |
+[SliverGrid](http:laomengit.com/flutter/widgets/SliverList.html#SliverGrid) | [SliverList](http:laomengit.com/flutter/widgets/SliverList.html) | [SnackBar](http:laomengit.com/flutter/widgets/SnackBar.html) | [Spacer](http:laomengit.com/flutter/widgets/Flexible.html#Spacer) | [StreamBuilder](http:laomengit.com/flutter/widgets/StreamBuilder.html) |
+[SwitchListTile](http:laomengit.com/flutter/widgets/Switch.html#SwitchListTile) | [TableCell](http:laomengit.com/flutter/widgets/Table.html#TableCell) | [TableRow](http:laomengit.com/flutter/widgets/Table.html#TableRow) | [TextAlign](http:laomengit.com/flutter/widgets/TextAlign.html) | [TextFormField](http:laomengit.com/flutter/widgets/Form.html#TextFormField) |
+[TimePicker](http:laomengit.com/flutter/widgets/DatePicker.html#TimePicker) | [ToggleButtons](http:laomengit.com/flutter/widgets/ToggleButtons.html) | [Tooltip](http:laomengit.com/flutter/widgets/Tooltip.html) | [Transform](http:laomengit.com/flutter/widgets/Transform.html) | [TweenAnimationBuilder](http:laomengit.com/flutter/widgets/TweenAnimationBuilder.html) |
+[UnconstrainedBox](http:laomengit.com/flutter/widgets/ConstrainedBox.html#UnconstrainedBox) | [ValueListenableBuilder](http:laomengit.com/flutter/widgets/ValueListenableBuilder.html) | [ValueListenableBuilder](http:laomengit.com/flutter/widgets/ValueListenableBuilder.html) | [WidgetsApp](http:laomengit.com/flutter/widgets/WidgetsApp.html) | [Wrap](http:laomengit.com/flutter/widgets/Wrap.html) |
+[showAboutDialog](http:laomengit.com/flutter/widgets/showDialog.html#showAboutDialog) | [showBottomSheet](http:laomengit.com/flutter/widgets/showDialog.html#showBottomSheet) | [showCupertinoDialog](http:laomengit.com/flutter/widgets/showDialog.html#showCupertinoDialog) | [showDialog](http:laomengit.com/flutter/widgets/showDialog.html) | [showGeneralDialog](http:laomengit.com/flutter/widgets/showDialog.html#showGeneralDialog) |
+[showLicensePage](http:laomengit.com/flutter/widgets/showDialog.html#showLicensePage) | [showSearch](http:laomengit.com/flutter/widgets/showDialog.html#showSearch) |
+
 
 ## 项目介绍
 ###  Flutter Fly（展翅高飞）
@@ -29,29 +89,6 @@
 
 <img src="https://github.com/781238222/imgs/raw/master/subtitle/subtitle_1.gif" height="300em"/><img src="https://github.com/781238222/imgs/raw/master/subtitle/subtitle_2.png" height="300em"/><img src="https://github.com/781238222/imgs/raw/master/subtitle/subtitle_3.png" height="300em"/><img src="https://github.com/781238222/imgs/raw/master/subtitle/subtitle_4.png" height="300em"/>
 
-
-## 交流
-欢迎加入微信交流群，微信:**laomengit**,或扫二维码：
-
- <img src="http://img.laomengit.com/laomeng_qr.png" width="250em"/>
-
-欢迎关注公众号【老孟程序员】，一个非常高产Flutter相关文章的公众号，扫二维码关注：
-
- <img src="http://img.laomengit.com/laomeng_gh_qr.jpg" width="250em"/>
-
-## Flutter 控件
-
-1. Google官方控件视频，每周更新一集：[https://www.youtube.com/watch?v=b_sQ9bMltGU&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG](https://www.youtube.com/watch?v=b_sQ9bMltGU&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG)
-
-2. 超过170多个控件的详细介绍：[http://laomengit.com/](http://laomengit.com/)
-
-
-## Flutter 动画
-
-### 动画相关文章
-1. 25种动画组件超全总结：[http://laomengit.com/flutter/module/animated_1/](http://laomengit.com/flutter/module/animated_1/)
-2. 组合动画:[http://laomengit.com/flutter/module/animation_combined](http://laomengit.com/flutter/module/animation_combined)
-3. Google工程师带你选择Flutter动画控件:[http://laomengit.com/flutter/module/animated_choose](http://laomengit.com/flutter/module/animated_choose)
 
 ### 带动画效果的PageView
 
@@ -131,43 +168,7 @@
 
 24. 城市列表，联系人列表，索引&悬停:[https://github.com/flutterchina/azlistview](https://github.com/flutterchina/azlistview)
 
-## Flutter 相关网站及博客
-
-1. Flutter 官方网站（英文）：[https://flutter.dev/](https://flutter.dev/)
-2. Flutter 官方网站（中文）：[https://flutter-io.cn/](https://flutter-io.cn/)
-
-
-## 相关文章
-1. 全网最全 Flutter 与 React Native 深入对比分析：[https://www.jianshu.com/p/da80214720eb](https://www.jianshu.com/p/da80214720eb)
-
-2. 致Flutter初学者的一封信：[http://laomengit.com/](http://laomengit.com/)
-
-3. Flutter学习路线：[http://laomengit.com/flutter/roadmap/](http://laomengit.com/flutter/roadmap/)
-
-4. Flutter 开发踩坑记录（干货总结）:[https://juejin.im/post/5e58ceadf265da575918dd14](https://juejin.im/post/5e58ceadf265da575918dd14)
-
-5. 带有Flutter的粒子动画: [https://juejin.im/post/5e1d5b9b6fb9a03013306588](https://juejin.im/post/5e1d5b9b6fb9a03013306588)
-
-6. Flutter中的花式背景动画: [https://juejin.im/post/5e1c38c96fb9a02fee1ed09e](https://juejin.im/post/5e1c38c96fb9a02fee1ed09e)
-
-
-7. 【Flutter高级玩法-shape】Path在手，天下我有:[https://juejin.im/post/5e6196066fb9a07c8b5bbdf5](https://juejin.im/post/5e6196066fb9a07c8b5bbdf5)
-
-
-8. Flutter完整开发实战详解(二十一、 Flutter 画面渲染的全面解析):[https://juejin.im/post/5e7c8419e51d455c706ca00d](https://juejin.im/post/5e7c8419e51d455c706ca00d)
-
-
-9. 【Flutter脱发录】也来实现一下灭霸效果: [https://juejin.im/post/5e7f5be55188257396515dbc](https://juejin.im/post/5e7f5be55188257396515dbc)
-
-
-10. Flutter：图像的爆炸动画💥 [https://juejin.im/post/5e3c17876fb9a07cab3a87fe](https://juejin.im/post/5e3c17876fb9a07cab3a87fe)
-
-
-11. 你知道吗，Flutter内置了10多种show:[https://juejin.im/post/5e7362f76fb9a07c9855105b](https://juejin.im/post/5e7362f76fb9a07c9855105b)
-
-12. 一个高自由度的Flutter 视频播放器: [https://juejin.im/post/5e1da0a55188254dfc6abde4](https://juejin.im/post/5e1da0a55188254dfc6abde4)
-
-13. 字节跳动为什么选用Flutter：并非跨平台终极之选，但它可能是不一样的未来: [https://juejin.im/post/5e81e37f6fb9a03c7e200370](https://juejin.im/post/5e81e37f6fb9a03c7e200370)
+25. [FlutterUnit](https://github.com/toly1994328/FlutterUnit)
 
 
 
