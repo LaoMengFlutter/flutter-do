@@ -170,5 +170,11 @@ Github开源地址：[https://github.com/781238222/flutter-do/tree/master/source
 
 25. [FlutterUnit](https://github.com/toly1994328/FlutterUnit)
 
+26. [Html解析器](https://github.com/houzhenpu/flutter_html_text)
+
+27. [markdown 解析器](https://github.com/flutter/flutter_markdown)
+
+28. [人人影视客户端](https://github.com/Vove7/yyets_flutter)
+
 
 
