@@ -2,17 +2,19 @@
   "name": "webview_flutter",
   "version": "0.0.1",
   "summary": "A WebView Plugin for Flutter.",
-  "description": "A WebView Plugin for Flutter.",
-  "homepage": "http://example.com",
+  "description": "A Flutter plugin that provides a WebView widget.\nDownloaded by pub (not CocoaPods).",
+  "homepage": "https://github.com/flutter/plugins",
   "license": {
+    "type": "BSD",
     "file": "../LICENSE"
   },
   "authors": {
-    "Your Company": "email@example.com"
+    "Flutter Dev Team": "flutter-dev@googlegroups.com"
   },
   "source": {
-    "path": "."
+    "http": "https://github.com/flutter/plugins/tree/master/packages/webview_flutter"
   },
+  "documentation_url": "https://pub.dev/packages/webview_flutter",
   "source_files": "Classes/**/*",
   "public_header_files": "Classes/**/*.h",
   "dependencies": {
