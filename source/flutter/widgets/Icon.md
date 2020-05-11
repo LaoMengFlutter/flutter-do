@@ -1,6 +1,6 @@
 ---
 title: 'Icon'
-description: '控件介绍'
+description: '用字形绘制的图形图标控件'
 type: widgets
 
 ---

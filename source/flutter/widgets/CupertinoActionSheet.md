@@ -1,6 +1,6 @@
 ---
 title: 'CupertinoActionSheet'
-description: '控件介绍'
+description: 'IOS风格底部弹出的提示框'
 type: widgets
 
 ---

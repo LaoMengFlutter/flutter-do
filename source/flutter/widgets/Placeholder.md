@@ -1,11 +1,11 @@
 ---
 title: 'Placeholder'
-description: '控件介绍'
+description: '绘制一个内有交叉线的框'
 type: widgets
 
 ---
 
-
+# Placeholder
 
 Placeholder是一个占位符控件，用于当没有准备好构建组件时，可以使用Placeholder进行占位。
 

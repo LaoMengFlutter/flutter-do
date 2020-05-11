@@ -1,11 +1,11 @@
 ---
 title: 'Container'
-description: '控件介绍'
+description: '结合了常见的绘画，定位和调整大小的组件'
 type: widgets
 
 ---
 
-
+# Container
 
 Container将会是我们以后最常用的控件之一，Container是单容器类控件，即只包含一个子控件。Container可以装饰和定位子控件，例如设置背景颜色、形状等。
 

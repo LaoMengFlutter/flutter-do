@@ -5,7 +5,7 @@ type: widgets
 
 ---
 
-
+# Dismissible
 
 Dismissible组件可通过左滑或者右滑清除列表项。
 

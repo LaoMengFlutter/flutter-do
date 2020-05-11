@@ -1,11 +1,11 @@
 ---
-title: 'RaisedButton | Button '
+title: 'Button '
 description: '控件介绍'
 type: widgets
 
 ---
 
-
+# Button
 
 Flutter内置了10多种Button（按钮）类控件供我们使用，了解这些控件有助于提高我们的开发速度。
 

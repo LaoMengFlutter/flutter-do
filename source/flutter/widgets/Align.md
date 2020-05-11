@@ -1,10 +1,10 @@
 ---
 title: 'Align|Center'
-description: '控件介绍'
+description: '布局控件'
 type: widgets
 ---
 
-
+# Align
 
 Align和Center控件都是控制子控件位置的控件。
 

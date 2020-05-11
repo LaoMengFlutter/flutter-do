@@ -1,6 +1,6 @@
 ---
 title: 'WidgetsApp'
-description: '控件介绍'
+description: '便利类，包装了应用程序通常需要的许多小部件'
 type: widgets
 
 ---

@@ -5,7 +5,7 @@ type: widgets
 
 ---
 
-
+# ListWheelScrollView
 
 在展示大量数据的时候我们第一会想到使用ListView，如果你觉得ListView比较单一、枯燥，你可以使用ListWheelScrollView，ListWheelScrollView和ListView同源，但它的渲染效果类似于车轮（或者滚筒），它不是在平面上滑动，而是转动车轮，先来看一波效果：
 

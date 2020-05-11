@@ -1,6 +1,6 @@
 ---
 title: 'RotationTransition'
-description: '控件介绍'
+description: '动画化小部件的旋转'
 type: widgets
 
 ---

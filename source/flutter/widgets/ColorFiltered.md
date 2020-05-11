@@ -1,11 +1,11 @@
 ---
-title: 'colorFilter'
+title: 'ColorFiltered'
 description: '控件介绍'
 type: widgets
 
 ---
 
-
+# ColorFiltered
 
 Flutter中大部分多组件都有`color`属性，可以方便的改变颜色，但如果想改变图片颜色就不是那么容易了，虽然Image组件也有color属性，但设置的`color`属性会覆盖整个组件，这并不是我们想要的，而ColorFiltered组件可以帮我们解决这个问题。
 

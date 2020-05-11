@@ -5,7 +5,7 @@ type: widgets
 
 ---
 
-
+# DraggableScrollableSheet
 
 DraggableScrollableSheet组件可以在屏幕上拖动，`builder`属性需要返回其子控件，可以是任何类型的子控件，一般返回一个ListView，用法如下：
 

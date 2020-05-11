@@ -1,11 +1,11 @@
 ---
-title: 'ValueListenableBuilder'
+title: 'ValueListenableBuilder | ValueNotifier'
 description: '控件介绍'
 type: widgets
 
 ---
 
-
+# ValueListenableBuilder ValueNotifier
 
 在开发应用程序的时候有些数据是全局的，贯穿整个应用程序，比如用户信息，我们希望当这些数据发生变化时，应用程序任何页面的数据都更新，ValueListenableBuilder组件就是解决此问题的。
 

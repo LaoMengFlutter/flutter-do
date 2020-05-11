@@ -1,11 +1,13 @@
 ---
-title: 'BackdropFilter|ImageFilter'
+title: 'BackdropFilter | ImageFilter'
 description: '控件介绍'
 type: widgets
 
 ---
 
 
+
+# BackdropFilter
 
 使用BackdropFilter和ImageFilter可以将图片模糊处理。
 

@@ -5,7 +5,7 @@ type: widgets
 
 ---
 
-
+# AnimatedSwitcher
 
  AnimatedSwitcher在2个或者多个子组件之间切换时使用动画，基本用法如下：
 

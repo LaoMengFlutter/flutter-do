@@ -5,7 +5,7 @@ type: widgets
 
 ---
 
-
+# AnimatedOpacity
 
 AnimatedOpacity是一个隐式的动画组件，它可以使子组件变的透明，用法如下：
 

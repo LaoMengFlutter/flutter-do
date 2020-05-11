@@ -1,6 +1,6 @@
 ---
 title: 'RefreshIndicator'
-description: '控件介绍'
+description: 'Material风格的“滑动刷新”组件'
 type: widgets
 
 ---

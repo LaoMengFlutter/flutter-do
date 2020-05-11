@@ -1,11 +1,11 @@
 ---
 title: 'SelectableText'
-description: '控件介绍'
+description: '单一样式的可选文本'
 type: widgets
 
 ---
 
-
+# SelectableText
 
 想象一下，应用程序中的文本可以被选中，并可以复制、剪切是不是很酷炫，SelectableText控件就提供了这样的功能，如下：
 

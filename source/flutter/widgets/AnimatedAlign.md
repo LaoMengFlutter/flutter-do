@@ -4,7 +4,7 @@ description: '控件介绍'
 type: widgets
 ---
 
-
+# AnimatedAlign
 
 AnimatedAlign组件方便我们构建位置动画，基本用法如下：
 

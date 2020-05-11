@@ -4,7 +4,7 @@ description: '控件介绍'
 type: widgets
 ---
 
-
+# AnimatedContainer
 
 Flutter中很多用于动画的控件，这篇文章介绍动画控件`AnimatedContainer`，我们可以通俗的理解AnimatedContainer是带动画功能的Container，关于Container的详细介绍可以查看[Flutter Widgets 之 Container](https://blog.csdn.net/mengks1987/article/details/104388393)，这篇详细介绍了Container的用法。
 

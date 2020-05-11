@@ -1,8 +1,10 @@
 ---
 title: 'AboutDialog'
-description: '控件介绍'
+description: '关于对话框，包含应用程序的图标，名称，版本号和版权，以及用于显示该应用程序使用的软件的许可证的按钮'
 type: widgets
 ---
+
+# AboutDialog
 
 AboutDialog用于描述当前App信息，底部提供2个按钮：查看许可按钮和关闭按钮。AboutDialog需要和showAboutDialog配合使用，用法如下：
 

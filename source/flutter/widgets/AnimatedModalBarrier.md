@@ -1,6 +1,6 @@
 ---
 title: 'AnimatedModalBarrier'
-description: '控件介绍'
+description: '一个小部件，可防止用户与其自身背后的小部件进行交互，并且可以使用动画颜色值进行配置'
 type: widgets
 
 ---

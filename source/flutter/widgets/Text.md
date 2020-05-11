@@ -1,11 +1,11 @@
 ---
 title: 'Text'
-description: '控件介绍'
+description: '单一样式的文字'
 type: widgets
 
 ---
 
-
+# Text
 
 Text是显示文本的组件，最常用的组件，都没有之一。基本用法如下：
 

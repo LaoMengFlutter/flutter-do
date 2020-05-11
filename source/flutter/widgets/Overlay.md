@@ -1,6 +1,6 @@
 ---
 title: 'Overlay'
-description: '控件介绍'
+description: '蒙层控件，可以在当前App显示一个浮层'
 type: widgets
 
 

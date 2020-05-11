@@ -5,7 +5,7 @@ type: widgets
 
 ---
 
-
+# TabBar
 
 TabBar 是一排水平的标签，可以来回切换，效果图：
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20181217114418189.png)

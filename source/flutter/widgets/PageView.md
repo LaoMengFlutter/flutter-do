@@ -5,7 +5,7 @@ type: widgets
 
 ---
 
-
+# PageView
 
 PageView控件可以实现一个“图片轮播”的效果，PageView不仅可以水平滑动也可以垂直滑动，简单用法如下：
 

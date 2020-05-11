@@ -5,7 +5,7 @@ type: widgets
 
 ---
 
-
+# ToggleButtons
 
 ToggleButtons组件将多个组件组合在一起，并让用户从中选择，ToggleButtons基础用法如下：
 

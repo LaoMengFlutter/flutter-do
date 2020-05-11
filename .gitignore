@@ -135,9 +135,8 @@ app.*.symbols
 !/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
 !/dev/ci/**/Gemfile.lock
 
-.idea/
-App.framework/
+# flutter_fly
+flutter_fly/.idea/
+flutter_fly/ios/Flutter/App.framework/
 Flutter.framework/
-
-/flutter_fly/.idea/
 

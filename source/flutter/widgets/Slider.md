@@ -1,6 +1,6 @@
 ---
-title: 'Slider'
-description: '控件介绍'
+title: 'Slider | RangeSlider |CupertinoSlider'
+description: '滑块组件'
 type: widgets
 
 ---
@@ -70,6 +70,8 @@ Slider(
 效果如下：
 
 ![](https://img-blog.csdnimg.cn/20200303194835801.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L21lbmdrczE5ODc=,size_16,color_FFFFFF,t_70)
+
+## RangeSlider
 
 如果想要选择一段值，可以使用RangeSlider，用法和Slider一样，如下：
 

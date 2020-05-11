@@ -1,11 +1,11 @@
 ---
-title: 'Flexible | Expanded'
-description: '控件介绍'
+title: 'Flexible | Expanded | Spacer'
+description: '具有权重属性的组件,按照比例分配'
 type: widgets
 
 ---
 
-
+# Flexible
 
 Expanded、Flexible和Spacer都是具有权重属性的组件，可以控制Row、Column、Flex的子控件如何布局的控件。
 

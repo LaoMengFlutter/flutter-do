@@ -5,7 +5,7 @@ type: widgets
 
 ---
 
-
+# GridView
 
 GridView是一个可滚动的，2D数组控件。
 

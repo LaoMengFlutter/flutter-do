@@ -5,7 +5,7 @@ type: widgets
 
 ---
 
-
+# AnimatedPadding
 
 AnimatedPadding是一个隐式的动画组件，提供动态改变内边距的动画组件，用法如下：
 

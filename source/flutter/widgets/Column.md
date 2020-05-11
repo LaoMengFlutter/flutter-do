@@ -5,7 +5,7 @@ type: widgets
 
 ---
 
-
+# Row Column
 
 在Row和Column中有一个非常重要的概念：MainAxisAlignment（主轴）和CrossAxisAlignment（交叉轴），简单来说，MainAxisAlignment（主轴）就是与当前控件方向一致的轴，而CrossAxisAlignment（交叉轴）就是与当前控件方向垂直的轴，比如Row的主轴是水平方向，交叉轴是垂直方向，而Column的主轴是垂直方向，交叉轴是水平方向。
 

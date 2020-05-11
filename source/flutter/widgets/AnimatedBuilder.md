@@ -4,7 +4,7 @@ description: '控件介绍'
 type: widgets
 ---
 
-
+# AnimatedBuilder
 
 AnimatedBuilder可以让我们轻松的构建动画控件，下面的案例是让flutter logo图片旋转，代码如下：
 

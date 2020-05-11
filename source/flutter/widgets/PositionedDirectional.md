@@ -1,11 +1,11 @@
 ---
 title: 'PositionedDirectional'
-description: '控件介绍'
+description: '控制[Stack]的子元素的位置，文本方向为系统默认方向，不受Stack组件控制'
 type: widgets
 
 ---
 
-
+# PositionedDirectional
 
 PositionedDirectional用于定位Stack子组件，PositionedDirectional必须是Stack的子组件，基本用法如下：
 

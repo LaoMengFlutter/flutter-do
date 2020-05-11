@@ -1,6 +1,6 @@
 ---
 title: 'AlignTransition'
-description: '控件介绍'
+description: '布局变化动画控件'
 type: widgets
 ---
 

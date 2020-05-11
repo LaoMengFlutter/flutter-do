@@ -5,7 +5,7 @@ type: widgets
 
 ---
 
-
+# FadeTransition
 
 FadeTransition提供了快速构建渐隐渐显动画的组件，用法如下：
 

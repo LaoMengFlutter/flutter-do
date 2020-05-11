@@ -1,6 +1,6 @@
 ---
 title: 'ModalBarrier'
-description: '控件介绍'
+description: '防止用户与其自身背后的组件进行交互的组件'
 type: widgets
 
 ---

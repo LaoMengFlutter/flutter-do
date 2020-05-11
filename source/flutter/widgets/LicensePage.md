@@ -1,11 +1,11 @@
 ---
 title: 'LicensePage'
-description: '控件介绍'
+description: '显示应用程序使用的软件的许可证的页面'
 type: widgets
 
 ---
 
-
+# LicensePage
 
 此控件基本不会用到，浏览一下即可。
 

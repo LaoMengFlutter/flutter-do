@@ -1,6 +1,6 @@
 ---
 title: 'GridPaper'
-description: '控件介绍'
+description: '绘制一个像素宽度的直线网格控件'
 type: widgets
 
 ---

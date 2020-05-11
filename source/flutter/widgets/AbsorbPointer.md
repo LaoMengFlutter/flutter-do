@@ -1,6 +1,6 @@
 ---
-title: 'AbsorbPointer'
-description: '控件介绍'
+title: 'AbsorbPointer | IgnorePointer'
+description: '在命中测试期间(不)吸收指针的控件'
 type: widgets
 
 ---

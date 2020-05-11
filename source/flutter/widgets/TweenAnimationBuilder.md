@@ -5,7 +5,7 @@ type: widgets
 
 ---
 
-
+# TweenAnimationBuilder
 
 开发App中有时需要一个简单的动画，可以通过AnimationController实现，但比较麻烦，有没有一个内置的隐式动画组件来解决这个问题？TweenAnimationBuilder可以满足你对所有自定义动画的需求，而不用关系AnimationController。
 

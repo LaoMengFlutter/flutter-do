@@ -5,7 +5,7 @@ type: widgets
 
 ---
 
-
+# SliverAppBar
 
 SliverAppBar控件可以实现页面头部区域展开、折叠的效果，类似于Android中的CollapsingToolbarLayout。
 先看下SliverAppBar实现的效果，效果图如下：

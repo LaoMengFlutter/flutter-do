@@ -4,7 +4,7 @@ description: '控件介绍'
 type: widgets
 ---
 
-
+# AnimatedList
 
 AnimatedList提供了一种简单的方式使列表数据发生变化时加入过渡动画，
 

@@ -5,7 +5,7 @@ type: widgets
 
 ---
 
-
+# StreamBuilder
 
  StreamBuilder组件用于异步接收数据更新组件，与FutureBuilder不同的地方在于StreamBuilder可以接收多个异步操作。
 

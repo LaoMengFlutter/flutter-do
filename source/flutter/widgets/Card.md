@@ -5,7 +5,7 @@ type: widgets
 
 ---
 
-
+# Card
 
 Card是material风格的卡片控件，Card有较小的圆角和阴影。Card通常用于展示一组信息，比如相册、位置信息等。
 

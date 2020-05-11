@@ -5,9 +5,7 @@ type: widgets
 
 ---
 
-
-
-## 基础用法
+# SnackBar
 
 应用程序有时候需要弹出消息提示用户，比如‘网络连接失败’、‘下载成功’等提示，就像Android
 等Toast，在Flutter中使用SnackBar组件，用法如下：

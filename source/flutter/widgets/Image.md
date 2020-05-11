@@ -1,11 +1,11 @@
 ---
 title: 'Image'
-description: '控件介绍'
+description: '图片组件'
 type: widgets
 
 ---
 
-
+# Image
 
 # 1、加载网络图片
 

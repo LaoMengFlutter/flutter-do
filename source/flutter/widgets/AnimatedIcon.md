@@ -4,7 +4,7 @@ description: '控件介绍'
 type: widgets
 ---
 
-
+# AnimatedIcon
 
 我们都知道Flutter系统中提供了大量的图标，但你是否知道Flutter还提供了很多动画图标，想要使用这些动画图标需要使用AnimatedIcon控件，首先需要设置图标，代码如下：
 

@@ -1,6 +1,6 @@
 ---
 title: 'CupertinoTabBar'
-description: '控件介绍'
+description: 'iOS样式的底部导航标签栏'
 type: widgets
 
 ---

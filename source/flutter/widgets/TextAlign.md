@@ -5,7 +5,7 @@ type: widgets
 
 ---
 
-
+# TextAlign
 
 TextAlign设置文本的对齐方式，用法如下：
 

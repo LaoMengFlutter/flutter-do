@@ -5,7 +5,7 @@ type: widgets
 
 ---
 
-
+# ShaderMask
 
 ShaderMask可以让我们将Shader用于任何一个控件上，比如在Text上使用渐变就可以使用ShaderMask来实现：
 

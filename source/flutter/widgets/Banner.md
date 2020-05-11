@@ -1,6 +1,6 @@
 ---
 title: 'Banner|CheckedModeBanner'
-description: '控件介绍'
+description: '在小部件的角落上方显示对角消息'
 type: widgets
 
 ---

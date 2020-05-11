@@ -5,7 +5,7 @@ type: widgets
 
 ---
 
-
+# AnimatedPositionedDirectional
 
 AnimatedPositionedDirectional是一个隐式的动画组件，提供动态改变位置的动画组件，用法如下：
 

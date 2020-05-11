@@ -1,11 +1,11 @@
 ---
 title: 'FadeInImage'
-description: '控件介绍'
+description: '加载目标[image]时显示[占位符]图像的图像，载后淡入新图像'
 type: widgets
 
 ---
 
-
+# FadeInImage
 
 在加载网络图片时通常需要一张展位图，当网络图片没有加载时先显示占位图，FadeInImage可以很好的实现这个功能。
 
