@@ -33,6 +33,8 @@ class HttpFactory {
   ///
   getData() async {
     var response = await _dio.get('flutter_fly_data.json');
+    //暂时不提供该api
+    return '';
     return response.data;
   }
 
@@ -41,6 +43,8 @@ class HttpFactory {
   ///
   getUpgradeInfo() async {
     var response = await _dio.get('flutter_fly_upgrade.json');
+    //暂时不提供该api
+    return '';
     return response.data;
   }
 }
