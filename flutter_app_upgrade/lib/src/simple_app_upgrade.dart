@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app_upgrade/flutter_app_upgrade.dart';
+import 'package:flutter_app_upgrade/src/download_status.dart';
 
 import 'liquid_progress_indicator.dart';
 
@@ -26,7 +27,11 @@ class SimpleAppUpgradeWidget extends StatefulWidget {
       this.downloadUrl,
       this.force = false,
       this.iosAppId,
-      this.appMarketInfo});
+      this.appMarketInfo,
+      this.onCancel,
+      this.onOk,
+      this.downloadProgress,
+      this.downloadStatusChange});
 
   ///
   /// 升级标题
@@ -109,6 +114,11 @@ class SimpleAppUpgradeWidget extends StatefulWidget {
   ///
   final AppMarketInfo appMarketInfo;
 
+  final VoidCallback onCancel;
+  final VoidCallback onOk;
+  final DownloadProgressCallback downloadProgress;
+  final DownloadStatusChangeCallback downloadStatusChange;
+
   @override
   State<StatefulWidget> createState() => _SimpleAppUpgradeWidget();
 }
@@ -120,6 +130,8 @@ class _SimpleAppUpgradeWidget extends State<SimpleAppUpgradeWidget> {
   /// 下载进度
   ///
   double _downloadProgress = 0.0;
+
+  DownloadStatus _downloadStatus = DownloadStatus.none;
 
   @override
   Widget build(BuildContext context) {
@@ -218,16 +230,18 @@ class _SimpleAppUpgradeWidget extends State<SimpleAppUpgradeWidget> {
           borderRadius: BorderRadius.only(
               bottomLeft: Radius.circular(widget.borderRadius))),
       child: InkWell(
-        borderRadius:
-            BorderRadius.only(bottomLeft: Radius.circular(widget.borderRadius)),
-        child: Container(
-          height: 45,
-          alignment: Alignment.center,
-          child: Text(widget.cancelText ?? '以后再说',
-              style: widget.cancelTextStyle ?? TextStyle()),
-        ),
-        onTap: () => Navigator.of(context).pop(),
-      ),
+          borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(widget.borderRadius)),
+          child: Container(
+            height: 45,
+            alignment: Alignment.center,
+            child: Text(widget.cancelText ?? '以后再说',
+                style: widget.cancelTextStyle ?? TextStyle()),
+          ),
+          onTap: () {
+            widget.onCancel?.call();
+            Navigator.of(context).pop();
+          }),
     );
   }
 
@@ -290,6 +304,7 @@ class _SimpleAppUpgradeWidget extends State<SimpleAppUpgradeWidget> {
   /// 点击确定按钮
   ///
   _clickOk() async {
+    widget.onOk?.call();
     if (Platform.isIOS) {
       //ios 需要跳转到app store更新，原生实现
       FlutterUpgrade.toAppStore(widget.iosAppId);
@@ -308,22 +323,40 @@ class _SimpleAppUpgradeWidget extends State<SimpleAppUpgradeWidget> {
   /// 下载apk包
   ///
   _downloadApk(String url, String path) async {
+    if (_downloadStatus == DownloadStatus.start ||
+        _downloadStatus == DownloadStatus.downloading ||
+        _downloadStatus == DownloadStatus.done) {
+      print('当前下载状态：$_downloadStatus,不能重复下载。');
+      return;
+    }
+
+    _updateDownloadStatus(DownloadStatus.start);
     try {
       var dio = Dio();
       await dio.download(url, path, onReceiveProgress: (int count, int total) {
         if (total == -1) {
           _downloadProgress = 0.01;
         } else {
+          widget.downloadProgress?.call(count, total);
           _downloadProgress = count / total.toDouble();
         }
         setState(() {});
         if (_downloadProgress == 1) {
           //下载完成，跳转到程序安装界面
+          _updateDownloadStatus(DownloadStatus.done);
+          Navigator.pop(context);
           FlutterUpgrade.installAppForAndroid(path);
         }
       });
     } catch (e) {
       print('$e');
+      _downloadProgress = 0;
+      _updateDownloadStatus(DownloadStatus.error,error: e);
     }
+  }
+
+  _updateDownloadStatus(DownloadStatus downloadStatus, {dynamic error}) {
+    _downloadStatus = downloadStatus;
+    widget.downloadStatusChange?.call(_downloadStatus, error: error);
   }
 }

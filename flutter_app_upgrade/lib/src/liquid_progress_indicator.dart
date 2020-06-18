@@ -28,11 +28,11 @@ class LiquidLinearProgressIndicator extends ProgressIndicator {
     this.center,
     this.direction = Axis.horizontal,
   }) : super(
-    key: key,
-    value: value,
-    backgroundColor: backgroundColor,
-    valueColor: valueColor,
-  ) {
+          key: key,
+          value: value,
+          backgroundColor: backgroundColor,
+          valueColor: valueColor,
+        ) {
     if (borderWidth != null && borderColor == null ||
         borderColor != null && borderWidth == null) {
       throw ArgumentError("borderWidth and borderColor should both be set.");
@@ -43,7 +43,7 @@ class LiquidLinearProgressIndicator extends ProgressIndicator {
       backgroundColor ?? Color(0x0000BFFF); //Theme.of(context).backgroundColor;
 
   Color _getValueColor(BuildContext context) =>
-      valueColor?.value ?? Color(0x6600BFFF);//Theme.of(context).accentColor;
+      valueColor?.value ?? Color(0x6600BFFF); //Theme.of(context).accentColor;
 
   @override
   State<StatefulWidget> createState() => _LiquidLinearProgressIndicatorState();
@@ -74,7 +74,7 @@ class _LiquidLinearProgressIndicatorState
               color: widget._getValueColor(context),
               direction: widget.direction,
             ),
-            if (widget.center != null) Center(child: widget.center),
+            widget.center != null ? Center(child: widget.center) : Container(),
           ],
         ),
       ),
@@ -137,8 +137,8 @@ class _LinearBorderPainter extends CustomPainter {
   @override
   bool shouldRepaint(_LinearBorderPainter oldDelegate) =>
       color != oldDelegate.color ||
-          width != oldDelegate.width ||
-          radius != oldDelegate.radius;
+      width != oldDelegate.width ||
+      radius != oldDelegate.radius;
 }
 
 class _LinearClipper extends CustomClipper<Path> {

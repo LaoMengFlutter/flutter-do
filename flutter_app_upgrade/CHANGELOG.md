@@ -1,7 +1,16 @@
 ## [1.0.0] Flutter App Upgrade
 
-* TODO: Flutter app upgrade,support Android and IOS.
+* Flutter app 升级功能，支持Android和iOS。
 
-## [1.0.2] 修复bug
+## [1.0.2]
 
-* 修复bug
+* 修复bug。
+
+## [1.1.0]
+
+* 1、修复一些情况下无法弹出提示框的bug。
+* 2、修复Android 平台弹出升级框后，点击返回键，升级框消失bug。
+* 3、下载完成后关闭升级框。
+* 4、修复多次点击“立即更新”重复下载bug。
+* 5、新增点击取消和立即更新按钮回调。
+* 6、新增下载进度和下载状态变化回调。

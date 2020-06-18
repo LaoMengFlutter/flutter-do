@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_app_upgrade/flutter_app_upgrade.dart';
 
+import 'download_status.dart';
 import 'simple_app_upgrade.dart';
 
 ///
@@ -38,6 +39,14 @@ class AppUpgrade {
   ///
   /// `appMarketInfo`：指定Android平台跳转到第三方应用市场更新，如果不指定将会弹出提示框，让用户选择哪一个应用市场。
   ///
+  /// `onCancel`：点击取消按钮回调
+  ///
+  /// `onOk`：点击更新按钮回调
+  ///
+  /// `downloadProgress`：下载进度回调
+  ///
+  /// `downloadStatusChange`：下载状态变化回调
+  ///
   static appUpgrade(
     BuildContext context,
     Future<AppUpgradeInfo> future, {
@@ -52,14 +61,15 @@ class AppUpgrade {
     double borderRadius = 20.0,
     String iosAppId,
     AppMarketInfo appMarketInfo,
+    VoidCallback onCancel,
+    VoidCallback onOk,
+    DownloadProgressCallback downloadProgress,
+    DownloadStatusChangeCallback downloadStatusChange,
   }) {
     future.then((AppUpgradeInfo appUpgradeInfo) {
       if (appUpgradeInfo != null && appUpgradeInfo.title != null) {
-        WidgetsBinding.instance.addPostFrameCallback((_) {
-          _showUpgradeDialog(
-            context,
-            appUpgradeInfo.title,
-            appUpgradeInfo.contents,
+        _showUpgradeDialog(
+            context, appUpgradeInfo.title, appUpgradeInfo.contents,
             apkDownloadUrl: appUpgradeInfo.apkDownloadUrl,
             force: appUpgradeInfo.force,
             titleStyle: titleStyle,
@@ -73,11 +83,13 @@ class AppUpgrade {
             progressBarColor: progressBarColor,
             iosAppId: iosAppId,
             appMarketInfo: appMarketInfo,
-          );
-        });
+            onCancel: onCancel,
+            onOk: onOk,
+            downloadProgress: downloadProgress,
+            downloadStatusChange: downloadStatusChange);
       }
     }).catchError((onError) {
-      print('onError');
+      print('$onError');
     });
   }
 
@@ -85,49 +97,65 @@ class AppUpgrade {
   /// 展示app升级提示框
   ///
   static _showUpgradeDialog(
-      BuildContext context, String title, List<String> contents,
-      {String apkDownloadUrl,
-      bool force = false,
-      TextStyle titleStyle,
-      TextStyle contentStyle,
-      String cancelText,
-      TextStyle cancelTextStyle,
-      String okText,
-      TextStyle okTextStyle,
-      List<Color> okBackgroundColors,
-      Color progressBarColor,
-      double borderRadius = 20.0,
-      String iosAppId,
-      AppMarketInfo appMarketInfo}) {
+    BuildContext context,
+    String title,
+    List<String> contents, {
+    String apkDownloadUrl,
+    bool force = false,
+    TextStyle titleStyle,
+    TextStyle contentStyle,
+    String cancelText,
+    TextStyle cancelTextStyle,
+    String okText,
+    TextStyle okTextStyle,
+    List<Color> okBackgroundColors,
+    Color progressBarColor,
+    double borderRadius = 20.0,
+    String iosAppId,
+    AppMarketInfo appMarketInfo,
+    VoidCallback onCancel,
+    VoidCallback onOk,
+    DownloadProgressCallback downloadProgress,
+    DownloadStatusChangeCallback downloadStatusChange,
+  }) {
     showDialog(
         context: context,
         barrierDismissible: false,
         builder: (context) {
-          return Dialog(
-              shape: RoundedRectangleBorder(
-                  borderRadius:
-                      BorderRadius.all(Radius.circular(borderRadius))),
-              child: SimpleAppUpgradeWidget(
-                title: title,
-                titleStyle: titleStyle,
-                contents: contents,
-                contentStyle: contentStyle,
-                cancelText: cancelText,
-                cancelTextStyle: cancelTextStyle,
-                okText: okText,
-                okTextStyle: okTextStyle,
-                okBackgroundColors: okBackgroundColors ??
-                    [
-                      Theme.of(context).primaryColor,
-                      Theme.of(context).primaryColor
-                    ],
-                progressBarColor: progressBarColor,
-                borderRadius: borderRadius,
-                downloadUrl: apkDownloadUrl,
-                force: force,
-                iosAppId: iosAppId,
-                appMarketInfo: appMarketInfo,
-              ));
+          return WillPopScope(
+            onWillPop: () async {
+              return false;
+            },
+            child: Dialog(
+                shape: RoundedRectangleBorder(
+                    borderRadius:
+                        BorderRadius.all(Radius.circular(borderRadius))),
+                child: SimpleAppUpgradeWidget(
+                  title: title,
+                  titleStyle: titleStyle,
+                  contents: contents,
+                  contentStyle: contentStyle,
+                  cancelText: cancelText,
+                  cancelTextStyle: cancelTextStyle,
+                  okText: okText,
+                  okTextStyle: okTextStyle,
+                  okBackgroundColors: okBackgroundColors ??
+                      [
+                        Theme.of(context).primaryColor,
+                        Theme.of(context).primaryColor
+                      ],
+                  progressBarColor: progressBarColor,
+                  borderRadius: borderRadius,
+                  downloadUrl: apkDownloadUrl,
+                  force: force,
+                  iosAppId: iosAppId,
+                  appMarketInfo: appMarketInfo,
+                    onCancel: onCancel,
+                    onOk: onOk,
+                    downloadProgress: downloadProgress,
+                    downloadStatusChange: downloadStatusChange
+                )),
+          );
         });
   }
 }
@@ -146,20 +174,35 @@ class AppUpgradeInfo {
       @required this.contents,
       this.apkDownloadUrl,
       this.force = false});
+
   ///
   /// title,显示在提示框顶部
   ///
   final String title;
+
   ///
   /// 升级内容
   ///
   final List<String> contents;
+
   ///
   /// apk下载url
   ///
   final String apkDownloadUrl;
+
   ///
   /// 是否强制升级
   ///
   final bool force;
 }
+
+///
+/// 下载进度回调
+///
+typedef DownloadProgressCallback = Function(int count, int total);
+
+///
+/// 下载状态变化回调
+///
+typedef DownloadStatusChangeCallback = Function(DownloadStatus downloadStatus,
+    {dynamic error});

@@ -1,14 +1,19 @@
+
+> 官网地址：[http://laomengit.com/plugin/upgrade.html](http://laomengit.com/plugin/upgrade.html)
+
 # 添加依赖
 
 1、在`pubspec.yaml`中加入：
 
 ```
 dependencies:
-  flutter_app_upgrade: ^1.0.2
+  flutter_app_upgrade: ^1.1.0
 ```
-2、执行flutter命令获取包：
 
-`flutter pub get`
+2、执行flutter命令获取包：
+```
+flutter pub get`
+```
 
 3、引入
 
@@ -42,7 +47,7 @@ import 'package:flutter_app_upgrade/flutter_app_upgrade.dart';
 </manifest>
 ```
 
-注意：provider中authorities的值为当前App的包名，和顶部的package值保持一致。
+>  注意：provider中authorities的值为当前App的包名，和顶部的package值保持一致。
 
 
 
@@ -64,26 +69,29 @@ import 'package:flutter_app_upgrade/flutter_app_upgrade.dart';
   }
 ```
 
-`_checkAppInfo`方法访问后台接口获取是否有新的版本的信息，返回`Future<AppUpgradeInfo>` 类型，`AppUpgradeInfo`包含title、升级内容、apk下载url、是否强制升级等版本信息。
+`_checkAppInfo`方法访问后台接口获取是否有新的版本的信息，返回`Future<AppUpgradeInfo>` 类型，`AppUpgradeInfo`包含title、升级内容、apk下载url、是否强制升级等版本信息。如果没有新的版本不返回即可。
 
 `iosAppId`参数用于跳转到app store。
 
 `_checkAppInfo()`方法通常是访问后台接口，这里直接返回新版本信息，代码如下：
 
 ```dart
-Future<AppUpgradeInfo> _checkAppInfo() {
-  return Future.value(AppUpgradeInfo(
-    title: '新版本V1.1.1',
-    contents: [
-      '1、支持立体声蓝牙耳机，同时改善配对性能',
-      '2、提供屏幕虚拟键盘',
-      '3、更简洁更流畅，使用起来更快',
-      '4、修复一些软件在使用时自动退出bug',
-      '5、新增加了分类查看功能'
-    ],
-    apkDownloadUrl: '',
-    force: false,
-  ));
+ Future<AppUpgradeInfo> _checkAppInfo() async {
+    //这里一般访问网络接口，将返回的数据解析成如下格式
+    return Future.delayed(Duration(seconds: 1), () {
+      return AppUpgradeInfo(
+        title: '新版本V1.1.1',
+        contents: [
+          '1、支持立体声蓝牙耳机，同时改善配对性能',
+          '2、提供屏幕虚拟键盘',
+          '3、更简洁更流畅，使用起来更快',
+          '4、修复一些软件在使用时自动退出bug',
+          '5、新增加了分类查看功能'
+        ],
+        force: false,
+      );
+    });
+  }
 ```
 
 好了，基本的升级功能就完成了，弹出提示框的效果如下：
@@ -182,6 +190,49 @@ AppUpgrade.appUpgrade(
 
 
 
+### 用户行为和下载回调
+
+新的版本（1.1.0）新增了**取消** 和**立即更新**回调，用法如下：
+
+```dart
+AppUpgrade.appUpgrade(
+  context,
+  _checkAppInfo(),
+  cancelText: '以后再说',
+  okText: '马上升级',
+  iosAppId: 'id88888888',
+  appMarketInfo: AppMarket.huaWei,
+  onCancel: () {
+    print('onCancel');
+  },
+  onOk: () {
+    print('onOk');
+  },
+  
+);
+```
+
+新增的**下载进度**和**下载状态变化**回调，用法如下：
+
+```dart
+AppUpgrade.appUpgrade(
+  context,
+  _checkAppInfo(),
+  cancelText: '以后再说',
+  okText: '马上升级',
+  iosAppId: 'id88888888',
+  appMarketInfo: AppMarket.huaWei,
+  downloadProgress: (count, total) {
+    print('count:$count,total:$total');
+  },
+  downloadStatusChange: (DownloadStatus status, {dynamic error}) {
+    print('status:$status,error:$error');
+  },
+);
+```
+
+
+
 ## 提示框样式定制
 
 如果默认的升级提示框不满足你的需求，那么你可以定制你的升级提示框。
@@ -238,6 +289,8 @@ AppUpgrade.appUpgrade(context, _checkAppInfo(),
     ...
 )
 ```
+
+
 
 
 
