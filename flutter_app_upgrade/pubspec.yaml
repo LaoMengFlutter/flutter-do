@@ -1,7 +1,7 @@
 name: flutter_app_upgrade
 description: App 升级功能
 version: 1.1.0
-homepage: https://github.com/781238222/flutter-do/tree/master/flutter_app_upgrade
+homepage: http://laomengit.com/plugin/upgrade.html
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
