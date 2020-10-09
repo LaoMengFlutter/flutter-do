@@ -1,7 +1,5 @@
 > 动起来，动手实践远比畏畏缩缩、止步不前要好得多。
 
-[RawGestureDetector](md/widgets/md/AboutDialog.md)
-
 
 
 ## 项目介绍
