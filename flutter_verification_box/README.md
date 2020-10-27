@@ -1,7 +1,7 @@
 ## 引入
 ```
 dependencies:
-  flutter_verification_box: ^1.0.3
+  flutter_verification_box: ^1.0.4
 ```
 导入包：
 ```
