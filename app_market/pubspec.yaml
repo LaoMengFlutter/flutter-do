@@ -1,13 +1,14 @@
 name: app_market
-description: A new Flutter plugin.
+description: App store related methods
 version: 0.0.1
-author:
-homepage:
+homepage: http://laomengit.com/
+repository: https://github.com/781238222/flutter-do/tree/master/app_market
+
+publish_to:
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
-  flutter: ">=1.20.0 <2.0.0"
-
+  flutter:  ^1.10.0
 dependencies:
   flutter:
     sdk: flutter
