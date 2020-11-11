@@ -30,7 +30,7 @@
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="com.flutter.flutter_app_upgrade_example.fileprovider"
+            android:authorities="${applicationId}.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
