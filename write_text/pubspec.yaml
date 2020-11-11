@@ -2,7 +2,8 @@ name: write_text
 description:  WriteText 是逐步显示文本的动画组件，像手写一样的效果。
 version: 0.0.1
 author:
-homepage:
+homepage: https://github.com/781238222/flutter-do/tree/master/write_text
+
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
