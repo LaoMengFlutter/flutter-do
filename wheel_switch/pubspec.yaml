@@ -1,8 +1,8 @@
-name: write_text热情人而为
-description:  WriteText 是逐步显示文本的动画组件，像手写一样的效果。
+name: wheel_switch
+description: 滚动开关
 version: 0.0.1
 author:
-homepage: https://github.com/781238222/flutter-do/tree/master/write_text
+homepage: https://github.com/781238222/flutter-do/tree/master/wheel_switch
 
 
 environment:
