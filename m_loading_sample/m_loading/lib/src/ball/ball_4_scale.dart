@@ -1,19 +1,18 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../common/delay_tween.dart';
 import 'ball.dart';
 import 'ball_style.dart';
 
 ///
-/// desc:小球脉冲效果
+/// desc:
 ///
 
-class BallGridPulseLoading extends StatefulWidget {
+class Ball4ScaleLoading extends StatefulWidget {
   final BallStyle ballStyle;
   final Duration duration;
   final Curve curve;
 
-  const BallGridPulseLoading(
+  const Ball4ScaleLoading(
       {Key key,
       this.ballStyle,
       this.duration = const Duration(milliseconds: 1200),
@@ -21,10 +20,10 @@ class BallGridPulseLoading extends StatefulWidget {
       : super(key: key);
 
   @override
-  _BallGridPulseLoadingState createState() => _BallGridPulseLoadingState();
+  _Ball4ScaleLoadingState createState() => _Ball4ScaleLoadingState();
 }
 
-class _BallGridPulseLoadingState extends State<BallGridPulseLoading>
+class _Ball4ScaleLoadingState extends State<Ball4ScaleLoading>
     with SingleTickerProviderStateMixin {
   AnimationController _controller;
   Animation _animation;
@@ -33,7 +32,8 @@ class _BallGridPulseLoadingState extends State<BallGridPulseLoading>
     _controller = AnimationController(vsync: this, duration: widget.duration)
         ..repeat();
 
-    _animation =_controller.drive(CurveTween(curve: widget.curve));
+    _animation = _controller.drive(CurveTween(curve: widget.curve));
+
     super.initState();
   }
 
@@ -47,12 +47,12 @@ class _BallGridPulseLoadingState extends State<BallGridPulseLoading>
   Widget build(BuildContext context) {
     return GridView.builder(
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 3,
+        crossAxisCount: 2,
       ),
       itemBuilder: (context, index) {
         return Center(
           child: ScaleTransition(
-            scale: DelayTween(begin: 0.0, end: 1.0, delay: index * .2)
+            scale: DelayTween(begin: 1.0, end: 0.0, delay: index * .2)
                 .animate(_animation),
             child: Ball(
               style: widget.ballStyle,
@@ -60,7 +60,7 @@ class _BallGridPulseLoadingState extends State<BallGridPulseLoading>
           ),
         );
       },
-      itemCount: 9,
+      itemCount: 4,
     );
   }
 }

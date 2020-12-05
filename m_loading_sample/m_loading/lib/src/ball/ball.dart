@@ -1,54 +1,51 @@
 import 'package:flutter/material.dart';
 
+import 'ball_style.dart';
+
+///
+/// 默认球的样式
+///
+const kDefaultBallStyle = BallStyle(
+  radius: 10.0,
+  color: Colors.white,
+  ballType: BallType.solid,
+  borderWidth: 0.0,
+  borderColor: Colors.white,
+);
+
 ///
 /// desc:球
 ///
-
 class Ball extends StatelessWidget {
   ///
-  /// 半径
+  /// 球样式
   ///
-  final double radius;
-
-  ///
-  /// 实心球颜色
-  ///
-  final Color color;
-
-  ///
-  /// 球的类型 [ BallType ]
-  ///
-  final BallType ballType;
-
-  ///
-  /// 边框宽
-  ///
-  final double borderWidth;
-
-  ///
-  /// 边框颜色
-  ///
-  final Color borderColor;
+  final BallStyle style;
 
   const Ball({
     Key key,
-    this.radius = 16,
-    this.color = Colors.white,
-    this.ballType = BallType.solid,
-    this.borderWidth = 0.0,
-    this.borderColor = Colors.white,
+    this.style,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    BallStyle _ballStyle = kDefaultBallStyle.copyWith(
+        radius: style?.radius,
+        color: style?.color,
+        ballType: style?.ballType,
+        borderWidth: style?.borderWidth,
+        borderColor: style?.borderColor);
+
     return SizedBox(
-      width: radius,
-      height: radius,
+      width: _ballStyle.radius,
+      height: _ballStyle.radius,
       child: DecoratedBox(
         decoration: BoxDecoration(
             shape: BoxShape.circle,
-            color: ballType == BallType.solid ? color : Colors.transparent,
-            border: Border.all(color: borderColor, width: borderWidth)),
+            color:
+                _ballStyle.ballType == BallType.solid ? _ballStyle.color : null,
+            border: Border.all(
+                color: _ballStyle.borderColor, width: _ballStyle.borderWidth)),
       ),
     );
   }
