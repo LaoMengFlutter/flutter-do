@@ -62,7 +62,7 @@ class _BallCirclePulseLoadingState extends State<BallCirclePulseLoading>
                 .animate(_animation),
             child: Ball(
                 style: kDefaultBallStyle.copyWith(
-                    radius: widget.ballStyle?.radius,
+                    size: widget.ballStyle?.size,
                     color: widget.ballStyle?.color,
                     ballType: widget.ballStyle?.ballType,
                     borderWidth: widget.ballStyle?.borderWidth,

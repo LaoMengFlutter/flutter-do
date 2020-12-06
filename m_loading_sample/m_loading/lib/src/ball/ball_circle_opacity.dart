@@ -53,7 +53,7 @@ class _BallCircleOpacityLoadingState extends State<BallCircleOpacityLoading>
       for (int i = 0; i < opacity.length; i++) {
         _styleList.add(
           kDefaultBallStyle.copyWith(
-              radius: widget.ballStyle?.radius ?? 5.0,
+              size: widget.ballStyle?.size ?? 5.0,
               color: widget.ballStyle?.color?.withOpacity(_opacityIndexList[i]),
               ballType: widget.ballStyle?.ballType,
               borderWidth: widget.ballStyle?.borderWidth,

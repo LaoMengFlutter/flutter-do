@@ -6,7 +6,7 @@ import 'ball_style.dart';
 /// 默认球的样式
 ///
 const kDefaultBallStyle = BallStyle(
-  radius: 10.0,
+  size: 10.0,
   color: Colors.white,
   ballType: BallType.solid,
   borderWidth: 0.0,
@@ -30,15 +30,15 @@ class Ball extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     BallStyle _ballStyle = kDefaultBallStyle.copyWith(
-        radius: style?.radius,
+        size: style?.size,
         color: style?.color,
         ballType: style?.ballType,
         borderWidth: style?.borderWidth,
         borderColor: style?.borderColor);
 
     return SizedBox(
-      width: _ballStyle.radius,
-      height: _ballStyle.radius,
+      width: _ballStyle.size,
+      height: _ballStyle.size,
       child: DecoratedBox(
         decoration: BoxDecoration(
             shape: BoxShape.circle,

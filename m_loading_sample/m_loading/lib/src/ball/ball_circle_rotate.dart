@@ -67,7 +67,7 @@ class _BallCircleRotateLoadingState extends State<BallCircleRotateLoading>
                     opacity: index * 0.1,
                     child: Ball(
                       style: kDefaultBallStyle.copyWith(
-                          radius: widget.ballStyle?.radius,
+                          size: widget.ballStyle?.size,
                           color: widget.ballStyle?.color,
                           ballType: widget.ballStyle?.ballType,
                           borderWidth: widget.ballStyle?.borderWidth,

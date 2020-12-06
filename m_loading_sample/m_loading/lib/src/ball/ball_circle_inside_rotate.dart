@@ -56,7 +56,7 @@ class _BallCircleInsideRotateLoadingState
   Widget build(BuildContext context) {
 
     BallStyle _ballStyle = kDefaultBallStyle.copyWith(
-        radius: widget.ballStyle?.radius??5.0,
+        size: widget.ballStyle?.size??5.0,
         color: widget.ballStyle?.color,
         ballType: widget.ballStyle?.ballType,
         borderWidth: widget.ballStyle?.borderWidth,

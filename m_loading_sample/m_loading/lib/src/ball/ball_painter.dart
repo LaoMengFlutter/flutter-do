@@ -44,7 +44,7 @@ class BallPainter extends CustomPainter {
       canvas.drawCircle(
           Offset(_radius + _radius * cos(perAngle * index),
               _radius + _radius * sin(perAngle * index)),
-          _style.radius,
+          _style.size,
           _paint);
     });
   }

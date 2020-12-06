@@ -7,9 +7,9 @@ import 'ball.dart';
 ///
 class BallStyle {
   ///
-  /// 半径
+  /// 尺寸
   ///
-  final double radius;
+  final double size;
 
   ///
   /// 实心球颜色
@@ -32,20 +32,20 @@ class BallStyle {
   final Color borderColor;
 
   const BallStyle(
-      {this.radius,
+      {this.size,
       this.color,
       this.ballType,
       this.borderWidth,
       this.borderColor});
 
   BallStyle copyWith(
-      {double radius,
+      {double size,
       Color color,
       BallType ballType,
       double borderWidth,
       Color borderColor}) {
     return BallStyle(
-        radius: radius ?? this.radius,
+        size: size ?? this.size,
         color: color ?? this.color,
         ballType: ballType ?? this.ballType,
         borderWidth: borderWidth ?? this.borderWidth,
@@ -57,7 +57,7 @@ class BallStyle {
     if (identical(this, other)) return true;
     if (other.runtimeType != runtimeType) return false;
     return other is BallStyle &&
-        other.radius == radius &&
+        other.size == size &&
         other.color == color &&
         other.ballType == ballType &&
         other.borderWidth == borderWidth &&

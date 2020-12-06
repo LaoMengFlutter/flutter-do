@@ -1,8 +1,8 @@
 name: m_loading
-description: A new Flutter package.
-version: 0.0.1
+description: loading library.
+version: 0.0.2
 author:
-homepage:
+homepage: https://github.com/781238222/flutter-do/tree/master/m_loading_sample
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
