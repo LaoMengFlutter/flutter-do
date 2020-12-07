@@ -43,6 +43,12 @@ dependencies:
 flutter pub get
 ```
 
+导入：
+
+```dart
+import 'package:m_loading/m_loading.dart';
+```
+
 
 
 所有 loading 动画组件的用法大同小异，都有 duration（动画时长） 和 curve（动画曲线）参数，以及外观样式的设置，下面是一些 loading 动画组件的用法。
