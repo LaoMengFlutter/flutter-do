@@ -81,7 +81,7 @@ return Container(
           ),
           Listener(
             onPointerDown: (v) {
-              print('click red');
+              print('click blue');
             },
             child: Container(
               color: Colors.blue,
