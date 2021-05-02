@@ -40,7 +40,10 @@ android {
     compileSdkVersion 30
 
     sourceSets {
-        main.java.srcDirs += 'src/main/kotlin'
+        main {
+            java.srcDirs += 'src/main/kotlin'
+            manifest.srcFile Boolean.parseBoolean(dartEnvironmentVariables.flutter_app_upgrade_googlePlay) ? 'src/google/AndroidManifest.xml' : 'src/main/AndroidManifest.xml'
+        }
     }
     defaultConfig {
         minSdkVersion 16
