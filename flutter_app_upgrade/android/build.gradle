@@ -28,7 +28,8 @@ def dartEnvironmentVariables = [
 ]
 if (project.hasProperty('dart-defines')) {
     dartEnvironmentVariables += project.property('dart-defines').split(',').collectEntries {
-        def pair = new String(Base64.decoder.decode(it)).split('=')
+        // def pair = new String(Base64.decoder.decode(it)).split('=')
+        def pair = URLDecoder.decode(it).split('=')
         [(pair.first()): pair.last()]
     }
 }
