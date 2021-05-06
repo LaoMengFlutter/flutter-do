@@ -61,10 +61,14 @@ public class FlutterAppUpgradePlugin : FlutterPlugin, MethodCallHandler, Activit
     } else if (call.method == "getApkDownloadPath") {
       result.success(mContext.getExternalFilesDir("")?.absolutePath)
     } else if (call.method == "install") {
-      //安装app
-      val path = call.argument<String>("path")
-      path?.also {
-        startInstall(mContext, it)
+      if (BuildConfig.googlePlay) {
+        result.error("error", "googlePlay=true, The app installation function is disabled.", null)
+      } else {
+        // 安装app
+        val path = call.argument<String>("path")
+        path?.also {
+          startInstall(mContext, it)
+        }
       }
     } else if (call.method == "getInstallMarket") {
       var packageList = getInstallMarket(call.argument<List<String>>("packages"))
