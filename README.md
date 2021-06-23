@@ -68,7 +68,7 @@
 
 欢迎大家加入 **【Flutter 交流群】**，搜索微信号：**laomengit**，或者扫描下方二维码：
 
-![](img/WechatIMG127.jpeg)
+![](img/laomengflutter.jpeg)
 
 
 
