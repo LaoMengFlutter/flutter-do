@@ -349,9 +349,11 @@ class _SimpleAppUpgradeWidget extends State<SimpleAppUpgradeWidget> {
         }
       });
     } catch (e) {
-      print('$e');
-      _downloadProgress = 0;
+      print('simple app upgrade error >> $e');
       _updateDownloadStatus(DownloadStatus.error,error: e);
+      setState(() {
+        _downloadProgress = 0;
+      });
     }
   }
 
