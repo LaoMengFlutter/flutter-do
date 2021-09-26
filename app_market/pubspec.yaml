@@ -7,7 +7,7 @@ repository: https://github.com/781238222/flutter-do/tree/master/app_market
 publish_to:
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: '>=2.12.0 <3.0.0'
 
 dependencies:
   flutter:

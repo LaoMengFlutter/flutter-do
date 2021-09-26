@@ -1,10 +1,10 @@
 import 'dart:async';
 import 'dart:io';
+
 import 'package:flutter/services.dart';
 
 class AppMarket {
-  static const MethodChannel _channel =
-      const MethodChannel('com.flutter.app_market');
+  static const MethodChannel _channel = const MethodChannel('com.flutter.app_market');
 
   ///
   /// 获取手机上安装的所有应用商店，
@@ -32,7 +32,7 @@ class AppMarket {
   /// iOS:
   /// 跳转到app store，
   ///
-  static toMarket({String packageName, String appleId}) async {
+  static toMarket({String? packageName, String? appleId}) async {
     var arguments = {'packageName': packageName ?? '', 'appleId': appleId};
     await _channel.invokeMethod('toMarket', arguments);
   }
@@ -41,10 +41,10 @@ class AppMarket {
   /// 是否存在当前应用市场，
   /// 仅对Android有效，iOS无效
   ///
-  static Future<bool> exist(String packageName) async {
+  static Future<bool?> exist(String packageName) async {
     if (Platform.isIOS) throw UnsupportedError('ios platform is not support ');
 
-    assert(packageName != null || packageName.isNotEmpty);
+    assert(packageName.isNotEmpty);
 
     var arguments = {'packageName': packageName};
     return await _channel.invokeMethod('exist', arguments);
@@ -57,7 +57,7 @@ class AppMarket {
   static installApk(String apkPath) async {
     if (Platform.isIOS) throw UnsupportedError('ios platform is not support ');
 
-    assert(apkPath != null || apkPath.isNotEmpty);
+    assert(apkPath.isNotEmpty);
 
     var arguments = {'path': apkPath};
     await _channel.invokeMethod('installApk', arguments);
