@@ -159,9 +159,8 @@ public class FlutterAppUpgradePlugin : FlutterPlugin, MethodCallHandler, Activit
   fun isPackageExist(context: Context, packageName: String?): Boolean {
     val manager = context.packageManager
     val intent = Intent().setPackage(packageName)
-    val infos = manager.queryIntentActivities(intent,
-            PackageManager.GET_INTENT_FILTERS)
-    return infos.size >= 1
+    val infos = manager.queryIntentActivities(intent, 0)
+    return infos.size > 0
   }
 
   /**

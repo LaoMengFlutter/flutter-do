@@ -50,6 +50,7 @@ class AppMarket {
       zte,
       qiHoo,
       tencent,
+      coolApk,
       pp,
       wanDouJia
     ];
@@ -103,6 +104,15 @@ class AppMarket {
       'tencent',
       "com.tencent.android.qqdownloader",
       "com.tencent.pangu.link.LinkProxyActivity");
+
+  ///
+  /// 酷安
+  ///
+  static final coolApk = AppMarketInfo(
+    'cookApk',
+    'com.coolapk.market',
+    'com.coolapk.market.view.main.MainActivity',
+  );
 
   ///
   /// pp助手

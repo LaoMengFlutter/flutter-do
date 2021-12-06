@@ -2,6 +2,7 @@ package io.flutter.plugins;
 
 import androidx.annotation.Keep;
 import androidx.annotation.NonNull;
+import io.flutter.Log;
 
 import io.flutter.embedding.engine.FlutterEngine;
 
@@ -12,7 +13,12 @@ import io.flutter.embedding.engine.FlutterEngine;
  */
 @Keep
 public final class GeneratedPluginRegistrant {
+  private static final String TAG = "GeneratedPluginRegistrant";
   public static void registerWith(@NonNull FlutterEngine flutterEngine) {
-    flutterEngine.getPlugins().add(new com.flutter.flutter_app_upgrade.FlutterAppUpgradePlugin());
+    try {
+      flutterEngine.getPlugins().add(new com.flutter.flutter_app_upgrade.FlutterAppUpgradePlugin());
+    } catch(Exception e) {
+      Log.e(TAG, "Error registering plugin flutter_app_upgrade, com.flutter.flutter_app_upgrade.FlutterAppUpgradePlugin", e);
+    }
   }
 }
