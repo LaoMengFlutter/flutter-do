@@ -2,4 +2,6 @@
   package="com.flutter.flutter_app_upgrade">
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <!-- Api30+上需要这个权限才getInstallMarket方法才能正常工作, 详见: https://developer.android.com/training/package-visibility -->
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
 </manifest>
