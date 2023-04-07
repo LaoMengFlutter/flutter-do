@@ -21,18 +21,35 @@ rootProject.allprojects {
     }
 }
 
+def dartEnvironmentVariables = [
+        // 是否是Google Play版, Google Play禁止App从第三方升级, 此时需要禁用掉插件中相关功能
+        // 可用通过gradle.properties配置该属性的默认值, 若不配置, 默认为false
+        flutter_app_upgrade_googlePlay: project.findProperty('flutter_app_upgrade_googlePlayDefaultValue') ?: 'false',
+]
+if (project.hasProperty('dart-defines')) {
+    dartEnvironmentVariables += project.property('dart-defines').split(',').collectEntries {
+        // def pair = new String(Base64.decoder.decode(it)).split('=')
+        def pair = URLDecoder.decode(it).split('=')
+        [(pair.first()): pair.last()]
+    }
+}
+
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 30
 
     sourceSets {
-        main.java.srcDirs += 'src/main/kotlin'
+        main {
+            java.srcDirs += 'src/main/kotlin'
+            manifest.srcFile Boolean.parseBoolean(dartEnvironmentVariables.flutter_app_upgrade_googlePlay) ? 'src/google/AndroidManifest.xml' : 'src/main/AndroidManifest.xml'
+        }
     }
     defaultConfig {
         minSdkVersion 16
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField 'boolean', 'googlePlay', dartEnvironmentVariables.flutter_app_upgrade_googlePlay
     }
     lintOptions {
         disable 'InvalidPackage'

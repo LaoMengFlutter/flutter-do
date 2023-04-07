@@ -27,8 +27,8 @@ class AppMarket {
     return marketList;
   }
 
-  static AppMarketInfo getBuildInMarket(String packageName) {
-    AppMarketInfo _info;
+  static AppMarketInfo? getBuildInMarket(String packageName) {
+    AppMarketInfo? _info;
     buildInMarketList.forEach((f) {
       if (f.packageName == packageName) {
         _info = f;
